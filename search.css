@@ -1,0 +1,48 @@
+body{
+    height: 100%;
+    background-color: black;
+}
+#spotSong{
+    color: rgb(156, 155, 155);
+    margin-top: 2px;
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    
+    
+}
+#card1{
+    background-color: orangered;
+
+}
+
+#card2{
+    background-color: rgba(43, 43, 139, 0.575);
+    
+}
+
+#card3{
+    background-color: rgb(255, 0, 106);
+    
+}
+
+#card4{
+    background-color: green;
+    
+}
+
+#card5{
+    background-color: orange;
+}
+
+#card6{
+    background-color: rgb(202, 82, 38);
+}
+
+#card7{
+    background-color: fuchsia;
+}
+
+#card8{
+    background-color: violet;
+}
