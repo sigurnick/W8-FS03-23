@@ -1,0 +1,84 @@
+/* INIZIO STILE NAV */
+body{
+    margin-bottom: 20%;
+    background-color: #121212;
+    
+}
+nav {
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    background-color: #121212;
+    z-index: 9999;
+    background-color: RGBA(0,0,0,0.5);
+    
+}
+/* FINE STILE NAV */
+.bg-header {
+    padding: 0;
+}
+h1 {
+    font-size: 3.5em;
+}
+.button-return {
+    top: 10%;
+    left: 8%;
+    border: none;
+    border-radius: 100%;
+    background-color: #6b706a ;
+    z-index: 1;
+}
+.fa-arrow-left {
+    font-size: 3em;
+    padding: 10px;
+    color: white;
+    filter: brightness(0.9);
+}
+.title-album {
+    bottom: 15%;
+    left: 3%;
+}
+.bg-album {
+    filter: brightness(0.7);
+}
+/* MAIN */
+main {
+    background-color: #121212;
+}
+#button-main {
+    border: #121212;
+    background-color: #121212;
+    color: white;
+    padding: 5px;
+    font-size: 1.3em;
+}
+#random-icon {
+    color: #2dce67;
+    font-size: 3em;
+}
+#pause-icon {
+    color: #2dce67;
+    border-color: #2dce67;
+    font-size: 3em;
+}
+.img-preferiti {
+    width: 80px;
+    border-radius: 100%;
+    margin: 20px 0 20px 5px;
+}
+.img-preferiti-2 {
+    width: 40px;
+    border-radius: 100%;
+    margin: 20px 0 20px 5px;
+}
+.box-preferiti {
+    position: relative;
+}
+.text-danger {
+    position: absolute;
+    bottom: 8%;
+    left: 65%;
+}
+.img-album-song {
+    width: 90px;
+}
