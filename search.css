@@ -1,6 +1,6 @@
 body{
     height: 100%;
-    background-color: black;
+    background-color: rgb(19, 19, 19);
 }
 #spotSong{
     color: rgb(156, 155, 155);
@@ -13,12 +13,16 @@ body{
 }
 #card1{
     background-color: orangered;
-   background-image: url("assets/imgs/search/image-2.jpg");
-   background-repeat: no-repeat;
-   background-size: 70px;
-   background-position: 145px 42px;
+    background-image: url("assets/imgs/search/image-2.jpg");
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: 145px 42px;
+    cursor: pointer;
+    
+ }
    
-   }
+   
+  
  
 
 #card2{
@@ -27,6 +31,7 @@ body{
    background-repeat: no-repeat;
    background-size: 70px;
    background-position: 145px 42px;
+   cursor: pointer;
 }
 
 #card3{
@@ -35,6 +40,7 @@ body{
    background-repeat: no-repeat;
    background-size: 70px;
    background-position: 145px 42px;
+   cursor: pointer;
 }
 
 #card4{
@@ -43,6 +49,7 @@ body{
    background-repeat: no-repeat;
    background-size: 70px;
    background-position: 145px 42px;
+   cursor: pointer;
 }
 
 #card5{
@@ -51,6 +58,7 @@ body{
    background-repeat: no-repeat;
    background-size: 70px;
    background-position: 145px 42px;
+   cursor: pointer;
 }
 
 #card6{
@@ -59,6 +67,7 @@ body{
    background-repeat: no-repeat;
    background-size: 70px;
    background-position: 145px 42px;
+   cursor: pointer;
 }
 
 #card7{
@@ -67,6 +76,7 @@ body{
    background-repeat: no-repeat;
    background-size: 70px;
    background-position: 145px 42px;
+   cursor: pointer;
 
 }
 
@@ -77,5 +87,31 @@ body{
    background-repeat: no-repeat;
    background-size: 70px;
    background-position: 145px 42px;
+   cursor: pointer;
 }
+#boxPlay{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 50px;
+    padding-right: 20px;
+    
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px 5px 5px 5px;
+}
+#miniBox{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 30px;
+}
+#contentPlayer {
+    cursor: pointer;
+}
+   
+    
 
