@@ -1,6 +1,7 @@
 body{
     height: 100%;
-    background-color: black;
+    background-image: url(https://img.freepik.com/premt-background-black-night-dark-evening-with-space-text-backgroundx9_661047-5058.jpg);
+    font-family: 'Cabin', sans-serif;
 }
 #spotSong{
     color: rgb(156, 155, 155);
@@ -13,80 +14,135 @@ body{
 }
 #card1{
     background-color: orangered;
-   background-image: url("assets/imgs/search/image-2.jpg");
-   background-repeat: no-repeat;
-   background-size: 70px;
-   background-position: 145px 42px;
-   cursor: pointer;
-   
+   position: relative;
+   overflow: hidden;
    }
- 
+ #card1 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
 
 #card2{
     background-color: rgba(43, 43, 139, 0.575);
-    background-image: url("assets/imgs/search/image-40.jpg");
-   background-repeat: no-repeat;
-   background-size: 70px;
-   background-position: 145px 42px;
-   cursor: pointer;
+    position: relative;
+   overflow: hidden;
 }
-
+#card2 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
 #card3{
     background-color: rgb(255, 0, 106);
-    background-image: url("assets/imgs/search/image-18.jpg");
-   background-repeat: no-repeat;
-   background-size: 70px;
-   background-position: 145px 42px;
-   cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
-
+#card3 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
 #card4{
     background-color: green;
-    background-image: url("assets/imgs/search/image-12.jpg");
-   background-repeat: no-repeat;
-   background-size: 70px;
-   background-position: 145px 42px;
-   cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
-
+#card4 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
 #card5{
     background-color: orange;
-    background-image: url("assets/imgs/search/image-21.jpg");
-   background-repeat: no-repeat;
-   background-size: 70px;
-   background-position: 145px 42px;
-   cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
-
+#card5 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
 #card6{
     background-color: rgb(202, 82, 38);
-    background-image: url("assets/imgs/search/image-23.jpg");
-   background-repeat: no-repeat;
-   background-size: 70px;
-   background-position: 145px 42px;
-   cursor: pointer;
+    position: relative;
+   overflow: hidden;
 }
-
+#card6 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
 #card7{
     background-color: fuchsia;
-    background-image: url("assets/imgs/search/image-32.jpg");
-   background-repeat: no-repeat;
-   background-size: 70px;
-   background-position: 145px 42px;
-   cursor: pointer;
+    position: relative;
+   overflow: hidden;
 
 }
-
+#card7 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
 #card8{
     background-color: violet;
+    position: relative;
+   overflow: hidden;
     
-    background-image: url("assets/imgs/search/image-52.jpg");
-   background-repeat: no-repeat;
-   background-size: 70px;
-   background-position: 145px 42px;
-   cursor: pointer;
 }
-
+#card8 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
 #boxPlay{
     display: flex;
     justify-content: end;
@@ -108,5 +164,14 @@ body{
     font-size: 30px;
 }
 #contentPlayer {
+    cursor: pointer;
+}
+#homeButton, 
+#cercaButton, 
+#libraryButton {
+cursor: pointer ;
+font-size: 25px;
+}
+#paragh{
     cursor: pointer;
 }
