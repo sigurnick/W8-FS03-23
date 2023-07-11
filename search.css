@@ -1,6 +1,6 @@
 body{
     height: 100%;
-    background-color: rgb(19, 19, 19);
+    background-color: black;
 }
 #spotSong{
     color: rgb(156, 155, 155);
@@ -13,16 +13,13 @@ body{
 }
 #card1{
     background-color: orangered;
-    background-image: url("assets/imgs/search/image-2.jpg");
-    background-repeat: no-repeat;
-    background-size: 70px;
-    background-position: 145px 42px;
-    cursor: pointer;
-    
- }
+   background-image: url("assets/imgs/search/image-2.jpg");
+   background-repeat: no-repeat;
+   background-size: 70px;
+   background-position: 145px 42px;
+   cursor: pointer;
    
-   
-  
+   }
  
 
 #card2{
@@ -89,6 +86,7 @@ body{
    background-position: 145px 42px;
    cursor: pointer;
 }
+
 #boxPlay{
     display: flex;
     justify-content: end;
@@ -112,6 +110,3 @@ body{
 #contentPlayer {
     cursor: pointer;
 }
-   
-    
-
