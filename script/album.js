@@ -78,12 +78,17 @@ const convertSecondsInMinutes = function (seconds) {
 
 
 
-const addressBarContent = new URLSearchParams(location.search);
-const albumId = addressBarContent.get("id");
+// let params = new URLSearchParams(location.search);
+
+// let q = params.get("q");
+
 
 const getAlbum = function () {
-  const urlAlbum =
-    "https://striveschool-api.herokuapp.com/api/deezer/album/75621072";
+
+const urlAlbum ="https://striveschool-api.herokuapp.com/api/deezer/album/75621072";
+//const urlAlbum ="https://striveschool-api.herokuapp.com/api/deezer/search?q=innamorato";
+
+
 
   fetch(urlAlbum)
     .then((res) => {
@@ -94,7 +99,7 @@ const getAlbum = function () {
       }
     })
     .then((data) => {
-      console.log(data);
+      console.log('dati',data);
 
       //-------------Inserisco l'limmagine dell' album--------------
       const generateImage = function () {

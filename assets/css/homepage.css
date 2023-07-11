@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(18, 18, 18) !important;
+}
+
+#user-avatar{
+    width: 35px;
+}
+
+.card{
+    background-color: rgb(24, 24, 24) !important;
+
+}
+.card:hover{
+    background-color: rgb(40,40,40) !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.play-button{
+    box-shadow: 5px 5px 25px 5px #000000 !important;
+    background-color: green !important;
+    position: absolute !important;
+    bottom: 35px !important;
+    right: 35px !important;
+}
