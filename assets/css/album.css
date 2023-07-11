@@ -1,3 +1,12 @@
+@import url(./circular-font.css);
+
+
+
+#user-avatar{
+    width: 35px;
+}
+
+
 #artist-img{
     width: 40px;
 }
@@ -10,6 +19,9 @@ button{
 #play-button{
     background-color: rgb(1, 101, 1) !important;
    
-    
-     
+   
 }
+
+
+
+
