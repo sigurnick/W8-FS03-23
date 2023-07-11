@@ -177,16 +177,22 @@ body{
     
     font-size: 30px;
 }
-#contentPlayer {
+#heart1{
     cursor: pointer;
-    
 }
-
 #play1{
     margin-left: 18px;
+    cursor: pointer;
 }
 #device1{
     margin-right: 18px;
+    cursor: pointer;
+}
+#device1:hover,
+#play1:hover,
+#heart1:hover{
+  font-size: 32px;
+
 }
 
 #homeButton, 
@@ -195,6 +201,22 @@ body{
 cursor: pointer ;
 font-size: 25px;
 }
+
+
+#homeButton:hover,
+#cercaButton:hover,
+#libraryButton:hover{
+font-size: 32px;
+}
+
+
 #paragh{
     cursor: pointer;
+}
+
+#listen{
+    color: rgb(156, 155, 155);
+    margin-left: 10px;
+    font-size: 18px;
+    
 }
