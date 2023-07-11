@@ -1,7 +1,8 @@
 body{
-    height: 100%;
+    height:100%;
     background-image: url(https://img.freepik.com/premt-background-black-night-dark-evening-with-space-text-backgroundx9_661047-5058.jpg);
     font-family: 'Cabin', sans-serif;
+    
 }
 #spotSong{
     color: rgb(156, 155, 155);
