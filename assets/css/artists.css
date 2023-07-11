@@ -4,7 +4,7 @@ body{
     background-color: #121212;
     
 }
-nav {
+#nav-mobile {
     width: 100%;
     position:fixed;
     bottom: 0;
@@ -35,9 +35,28 @@ h1 {
     filter: brightness(0.9);
 }
 .title-album {
-    bottom: 15%;
+    top: 70%;
     left: 3%;
+    font-size: 1.8em;
 }
+@media screen and (min-width: 768px) {
+    .title-album{
+        font-size: 2.5em;
+        top: 70%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .title-album{
+        font-size: 4em;
+        top: 80%;
+    }
+}
+.title-album-2 {
+    top: 90%;
+    left: 3%;
+    font-size: 2em;
+}
+
 .bg-album {
     filter: brightness(0.7);
 }
@@ -82,3 +101,22 @@ main {
 .img-album-song {
     width: 90px;
 }
+.icon-aside {
+    margin-right:10% ;
+}
+.following-ancor {
+    border: none;
+    background-color: #121212;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: 1px solid white;
+    padding: 3px;
+    text-align: center;
+    width: 150px;
+}
+.crea-playlist {
+    color: grey;
+}
+
+
+

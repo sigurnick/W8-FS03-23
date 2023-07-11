@@ -23,32 +23,58 @@
     />
     <link rel="stylesheet" href="assets/css/artists.css" />
   </head>
-  <body>
-    <!-- INIZIO NAV -->
-    <nav>
-      <div class="col col-12 d-flex justify-content-evenly align-items-center">
-        <a
-          class="text-white d-flex flex-column text-center text-decoration-none fs-3"
-          href="#"
-          ><i class="fas fa-home"></i>Home</a
-        >
-        <a
-          class="text-white d-flex flex-column text-center text-decoration-none fs-3"
-          href="#"
-          ><i class="fas fa-search"></i>Search</a
-        >
-        <a
-          class="text-white d-flex flex-column text-center text-decoration-none fs-3"
-          href="#"
-          ><i class="bi bi-collection-play-fill"></i>La tua Libreria</a
-        >
+  <body class="position-relative">
+    <!-- INIZIO NAV MOBILE -->
+    <nav id="nav-mobile">
+      <div class="container">
+        <div class="row cols cols d-sm-block cols d-md-none">
+          <div
+            class="col col-12 d-flex justify-content-evenly align-items-center"
+          >
+            <a
+              class="text-white d-flex flex-column text-center text-decoration-none fs-3"
+              href="#"
+              ><i class="fas fa-home"></i>Home</a
+            >
+            <a
+              class="text-white d-flex flex-column text-center text-decoration-none fs-3"
+              href="#"
+              ><i class="fas fa-search"></i>Search</a
+            >
+            <a
+              class="text-white d-flex flex-column text-center text-decoration-none fs-3"
+              href="#"
+              ><i class="bi bi-collection-play-fill"></i>La tua Libreria</a
+            >
+          </div>
+        </div>
       </div>
     </nav>
-    <!-- FINE NAV -->
+    <!-- FINE NAV MOBILE -->
+    <!-- INIZIO nav Desktop -->
+    <nav class="position-fixed start-0 z-3">
+      <div class="container">
+        <div class="row d-sm-none d-md-block">
+          <div class="col col-md-2 col-lg-2 d-flex flex-column">
+            <div>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio sunt deserunt modi accusantium temporibus voluptas
+                quia iure incidunt architecto at dolore, voluptatum recusandae
+                aliquid, eaque laborum sequi et tempore! Numquam.
+              </p>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </nav>
+    <!-- FINE Nav Desktop -->
     <!-- INIZIO HEADER -->
     <header>
       <div class="container-fluid bg-header">
-        <div class="row">
+        <div class="row cols">
           <div class="col col-12 position-relative">
             <button class="button-return position-absolute" type="button">
               <i class="fas fa-arrow-left"></i>
