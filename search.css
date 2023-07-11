@@ -12,6 +12,13 @@ body{
     
     
 }
+
+#spoty{
+    width: 100px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
 #card1{
     background-color: orangered;
    position: relative;
@@ -162,7 +169,7 @@ body{
     border-radius: 5px 5px 5px 5px;
 }
 #miniBox{
-    width: 100px;
+    width: 130px;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -171,7 +178,16 @@ body{
 }
 #contentPlayer {
     cursor: pointer;
+    
 }
+
+#play1{
+    margin-left: 18px;
+}
+#device1{
+    margin-right: 18px;
+}
+
 #homeButton, 
 #cercaButton, 
 #libraryButton {
