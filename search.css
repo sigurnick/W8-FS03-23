@@ -1,0 +1,81 @@
+body{
+    height: 100%;
+    background-color: black;
+}
+#spotSong{
+    color: rgb(156, 155, 155);
+    margin-top: 2px;
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    
+    
+}
+#card1{
+    background-color: orangered;
+   background-image: url("assets/imgs/search/image-2.jpg");
+   background-repeat: no-repeat;
+   background-size: 70px;
+   background-position: 145px 42px;
+   
+   }
+ 
+
+#card2{
+    background-color: rgba(43, 43, 139, 0.575);
+    background-image: url("assets/imgs/search/image-40.jpg");
+   background-repeat: no-repeat;
+   background-size: 70px;
+   background-position: 145px 42px;
+}
+
+#card3{
+    background-color: rgb(255, 0, 106);
+    background-image: url("assets/imgs/search/image-18.jpg");
+   background-repeat: no-repeat;
+   background-size: 70px;
+   background-position: 145px 42px;
+}
+
+#card4{
+    background-color: green;
+    background-image: url("assets/imgs/search/image-12.jpg");
+   background-repeat: no-repeat;
+   background-size: 70px;
+   background-position: 145px 42px;
+}
+
+#card5{
+    background-color: orange;
+    background-image: url("assets/imgs/search/image-21.jpg");
+   background-repeat: no-repeat;
+   background-size: 70px;
+   background-position: 145px 42px;
+}
+
+#card6{
+    background-color: rgb(202, 82, 38);
+    background-image: url("assets/imgs/search/image-23.jpg");
+   background-repeat: no-repeat;
+   background-size: 70px;
+   background-position: 145px 42px;
+}
+
+#card7{
+    background-color: fuchsia;
+    background-image: url("assets/imgs/search/image-32.jpg");
+   background-repeat: no-repeat;
+   background-size: 70px;
+   background-position: 145px 42px;
+
+}
+
+#card8{
+    background-color: violet;
+    
+    background-image: url("assets/imgs/search/image-52.jpg");
+   background-repeat: no-repeat;
+   background-size: 70px;
+   background-position: 145px 42px;
+}
+
