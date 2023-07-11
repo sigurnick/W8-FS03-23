@@ -19,17 +19,27 @@
   </head>
   <body class="bg-black mb-4">
     <!-- ----------------------------------------Album top section -------------------------------------------------------->
-    <div id="top-container-background" class="p-5">
+    <div id="top-container-background" class="px-4 py-3">
 
         <!-- dextop top bar -->
-        <div class="position-absolute top-0 mt-3 d-none d-lg-block">
+        <div class="d-none d-lg-block ">
 
-            <div class="mb-3">
-                <i class="bi bi-arrow-left-circle text-white fs-2 me-3"></i>
-                <i class="bi bi-arrow-right-circle text-white fs-2"></i>   
+
+            <div class="w-100 d-flex justify-content-between">
+
+                <div class="mb-3">
+                    <i class="bi bi-arrow-left-circle text-white fs-2 me-3"></i>
+                    <i class="bi bi-arrow-right-circle text-white fs-2"></i>   
+                </div>
+    
+                <div>
+                    <img id="user-avatar" src="./assets/imgs/user avatar.png" alt="">
+                </div>
             </div>
 
         </div>
+
+        <!-- Container info album -->
     <div
       id="top-container"
       class="d-flex flex-column gap-4 flex-lg-row align-items-lg-center "
@@ -74,15 +84,15 @@
               src="/assets/imgs/main/image-10.jpg"
               alt=""
             /> -->
-            <h4 id="artist-name" class="text-white">Nome artista</h4>
+            <h4 id="artist-name" class="text-white mb-0">Nome artista</h4>
           </div>
 
           <!-- info album varie -->
           <div class="d-flex align-items-center text-white gap-2">
-            <h6 class="d-lg-none">Album</h6>
-            <h6 id="album-year"></h6>
-            <h6 id="album-n-songs" class="d-none d-lg-block text-white"></h6>
-            <h6 id="album-duration" class="d-none d-lg-block text-secondary">53 min 20 sec</h6>
+            <h6 class="d-lg-none mb-0">Album</h6>
+            <h6 id="album-year" class="mb-0"></h6>
+            <h6 id="album-n-songs" class="d-none d-lg-block text-white mb-0"></h6>
+            <h6 id="album-duration" class="d-none d-lg-block text-secondary mb-0">53 min 20 sec</h6>
           </div>
         </div>
       </div>
@@ -124,17 +134,17 @@
     <!-- ------------------------------------------------------------------------------------------------------------------------>
 
     <!-- ---------------------------------------------Album tracks -------------------------------------------------------->
-    <div id="tacks-container" class="container mt-5">
+    <div id="tacks-container" class="mx-5 mt-5">
       <!-- -----------------------colum name----- -->
       <div
         class="row d-none d-lg-flex justify-content-between border-bottom border-secondary mb-4"
       >
         <div class="col col-7">
-          <h4 class="text-secondary"># TITOLO</h4>
+          <h5 class="text-secondary"># TITOLO</h5>
         </div>
 
         <div class="col col-4">
-          <h4>RIPRODUZIONI</h4>
+          <h5>RIPRODUZIONI</h5>
         </div>
 
         <div class="col col-1">
