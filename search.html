@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spotify | Search</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/search.css">
-    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="./assets/css/search.css">
+    
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -20,7 +20,149 @@
 
   </head>
   <body>
-    <main>
+
+
+
+
+    <!-- INIZIO ASIDE SINISTRA MENU-NAV -->
+ <div class="container-fluid">
+  <div class="row">
+    <div
+      class="altezza-aside col d-none col d-lg-flex col-md-3 d-flex flex-column"
+    >
+      <div class="position-aside d-flex flex-column">
+        <a
+          class="hover-aside text-decoration-none text-white fs-5 mb-3 mt-3"
+          href=""
+          ><i class="icon-aside fas fa-home"></i>Home</a
+        >
+        <a
+          class="hover-aside text-decoration-none text-white fs-5 mb-3"
+          href="./search.html"
+          ><i class="icon-aside fas fa-search"></i>Cerca</a
+        >
+
+        <hr class="text-white" />
+        <a
+          class="hover-aside text-decoration-none text-white fs-5 mb-3"
+          href=""
+          ><i class="icon-aside bi bi-collection-play-fill"></i>La tua
+          libreria</a
+        >
+        <div class="d-flex justify-content-evenly mb-3">
+          <a class="ancore-aside text-decoration-none text-white" href=""
+            >Playlist</a
+          >
+          <a class="ancore-aside text-decoration-none text-white" href=""
+            >Artisti</a
+          >
+          <a class="ancore-aside text-decoration-none text-white" href=""
+            >Album</a
+          >
+        </div>
+      </div>
+      <div class="d-flex align-items-end">
+        <img
+          class="img-album-song-aside mt-5"
+          src="assets/imgs/main/image-12.jpg"
+          alt=""
+        />
+        <p class="text-white mb-0 ms-3">
+          song that feel like the i swear i was infinite ... Playlist -
+          Milla Ellis Wood
+        </p>
+      </div>
+      <div class="d-flex align-items-end">
+        <img
+          class="img-album-song-aside mt-3"
+          src="assets/imgs/main/image-12.jpg"
+          alt=""
+        />
+        <p class="text-white mb-0 ms-3">
+          song that feel like the i swear i was infinite ... Playlist -
+          Milla Ellis Wood
+        </p>
+      </div>
+      <div class="d-flex align-items-end">
+        <img
+          class="img-album-song-aside mt-3"
+          src="assets/imgs/main/image-12.jpg"
+          alt=""
+        />
+        <p class="text-white mb-0 ms-3">
+          song that feel like the i swear i was infinite ... Playlist -
+          Milla Ellis Wood
+        </p>
+      </div>
+      <div class="d-flex align-items-end">
+        <img
+          class="img-album-song-aside mt-3"
+          src="assets/imgs/main/image-12.jpg"
+          alt=""
+        />
+        <p class="text-white mb-0 ms-3">
+          song that feel like the i swear i was infinite ... Playlist -
+          Milla Ellis Wood
+        </p>
+      </div>
+      <div class="d-flex align-items-end">
+        <img
+          class="img-album-song-aside mt-3"
+          src="assets/imgs/main/image-12.jpg"
+          alt=""
+        />
+        <p class="text-white mb-0 ms-3">
+          song that feel like the i swear i was infinite ... Playlist -
+          Milla Ellis Wood
+        </p>
+      </div>
+      <div class="d-flex align-items-end">
+        <img
+          class="img-album-song-aside mt-3"
+          src="assets/imgs/main/image-12.jpg"
+          alt=""
+        />
+        <p class="text-white mb-0 ms-3">
+          song that feel like the i swear i was infinite ... Playlist -
+          Milla Ellis Wood
+        </p>
+      </div>
+      <div class="d-flex align-items-end">
+        <img
+          class="img-album-song-aside mt-3"
+          src="assets/imgs/main/image-12.jpg"
+          alt=""
+        />
+        <p class="text-white mb-0 ms-3">
+          song that feel like the i swear i was infinite ... Playlist -
+          Milla Ellis Wood
+        </p>
+      </div>
+      
+     
+      <div class="d-flex align-items-end">
+        <img
+          class="img-album-song-aside mt-3"
+          src="assets/imgs/main/image-12.jpg"
+          alt=""
+        />
+        <p class="text-white mb-0 ms-3">
+          song that feel like the i swear i was infinite ... Playlist -
+          Milla Ellis Wood
+        </p>
+      </div>
+    </div>
+    <!-- FINE ASIDE SINISTRA -->
+
+
+    <!-- ----------------------Main--------------------- -->
+    <div class="col col-sm-12 col-lg-9 position-relative">
+
+  
+
+      <main>
+
+         
         <div class="container">
         <header>
         <div class="container">
@@ -35,6 +177,7 @@
                            <div class="col col-10 col-md-6">
                                 <form>
                                  <input type="text" placeholder="Cosa vuoi ascoltare?" id="listen">
+                                 <button type="submit" class="fs-3">Cerca</button>
                                 </form>
                              
                            </div>
@@ -44,10 +187,13 @@
         </div>
     </div>
 </header>
-<div class="container">
-    <h3 class="text-light text-center mt-4">Sfoglia tutto</h3>
-</div>
-<section>
+
+   
+
+<section id="categorie">
+
+
+  <h3 class="text-light text-center mt-4">Sfoglia tutto</h3>
     <div class="container">
         <div class="row ms-2 gy-3 mt-1 me-2">
             <div class="col col-6 col-lg-3">
@@ -121,42 +267,118 @@
        </div>
     </div>
 </section>
-<footer>
-<article>
-  <div class="container-fluid">
-    <div class="bg-dark" id="boxPlay">
-      <div id="miniBox">
-      <div id="contentPlayer">
-      <i class="fas fa-mobile-alt" style="color: #9c9b9b;" id="device1"></i>
-      <i class="far fa-heart" style="color: #9c9b9b;" id="heart1"></i>
-      <i class="fas fa-play" style="color: #9c9b9b;" id="play1"></i>
-    </div>
-  </div>
-  </div>
-  </div>
-</article>
-</div>
+
+
+
+<div id="dinamic-container">
+
 <div class="container">
-  <div class="row mt-4 text-center" >
-    <div class="col col-4">
-      <i class="fas fa-home" style="color: #9c9b9b;" id="homeButton"></i>
-      <p class="text-light" id="paragh">Home</p>
+
+<!-- artist and songs -->
+  <div class="row">
+<!-- --------------------------------Artist--------------------------- -->
+    <div id="artist-col" class="col cols-2 ">
+
+
+<!-- <h3 class="text-white mt-5 mb-4">Artists</h3>   
+
+      <a href="./album.html?429691697">
+        <div class="card">
+          <div class="position-relative">
+            <img
+              src="https://media.gqitalia.it/photos/614c599de5f23a4cbf35ebd9/1:1/pass/Blanco%2520credits%2520by%2520%2520Bogdan%2520Chilldays%2520Plakov.jpg"
+              class="card-img-top p-4 rounded-circle"
+            />
+
+            <button class="play-button d-none rounded-circle px-2">
+              <i class="bi bi-play-fill text-black fs-1 text-center"></i>
+            </button>
+          </div>
+          <div class="px-4 pb-3">
+            <h5 class="card-title text-white">Blanco</h5>
+            <p class="card-text text-secondary">
+              Artist
+            </p>
+          </div>
+        </div>
+      </a> -->
+
 
     </div>
-    <div class="col col-4">
-      <i class="fas fa-search" style="color: #e9ecf1;" id="cercaButton"></i>
-      <p class="text-light" id="paragh">Cerca</p>
 
-    </div>
-    <div class="col col-4">
-      <i class="fas fa-tasks" style="color: #9c9b9b;" id="libraryButton"></i>
-      <p class="text-light" id="paragh">La tua liberia</p>
+<!-- --------------------------------Top songs--------------------------- -->
+    <div id="song-col" class="col cols-8">
+
+
+
+     <!-- <h3 class="text-white mt-5 mb-5">Top Songs</h3>
+
+          <div class="d-flex align-items-center gap-2">
+            <img class="w-25" src="./assets/imgs/search/image-10.jpg" alt="">
+            <div>
+              <h4 class="m-0 text-white">Nome canzone</h4>
+              <h5 class="text-secondary">artista</h5>
+            </div>
+          </div>
+
+
+          <div class="d-flex align-items-center gap-2">
+           <img class="w-25" src="./assets/imgs/search/image-10.jpg" alt="">
+           <div>
+             <h4 class="m-0 text-white">Nome canzone</h4>
+             <h5 class="text-secondary">artista</h5>
+           </div>
+         </div> -->
+
+        
+           
+         </div>
+  </div>
+
+
+  <div class="row">
+    <div id="artists-col" class="col">
+
 
     </div>
   </div>
 </div>
-</footer>
+
+</div>
+
     </main>
+      
+     
+     
+    </div>
+    <!-- -----------------------------------Fine main---------------------------------------------- -->
+  </div>
+  <div class="row cols d-sm-block cols d-lg-none">
+    <div
+      class="bg-nav-mobile col col-12 d-flex justify-content-evenly align-items-center position-fixed bottom-0"
+    >
+      <a
+        class="text-white d-flex flex-column text-center text-decoration-none fs-3"
+        href="#"
+        ><i class="fas fa-home"></i>Home</a
+      >
+      <a
+        class="text-white d-flex flex-column text-center text-decoration-none fs-3"
+        href="#"
+        ><i class="fas fa-search"></i>Search</a
+      >
+      <a
+        class="text-white d-flex flex-column text-center text-decoration-none fs-3"
+        href="#"
+        ><i class="bi bi-collection-play-fill"></i>La tua Libreria</a
+      >
+    </div>
+  </div>
+</div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="./script/search.js"></script>
   </body>
 </html>

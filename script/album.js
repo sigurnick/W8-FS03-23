@@ -200,7 +200,7 @@ const getAlbum = function () {
         newDivTacks.classList.add("row", "justify-content-between");
         newDivTacks.innerHTML = ` <div class="col col-7">
         <div class="d-flex align-items-center gap-3">
-          <h5 class="text-white">${i}</h5>
+          <h5 class="text-white">${i+1}</h5>
 
           <div>
             <h4 class="text-white">${e.title}</h4>
@@ -260,6 +260,6 @@ const start = function () {
 
   //metto il background gradient dinamico
   topContainerBackground.style.backgroundImage = `
-    linear-gradient(#${mostRecurrentHex}, rgb(0, 0, 0))  
+    linear-gradient(#${mostRecurrentHex}, rgb(18, 18, 18))  
     `;
 };
