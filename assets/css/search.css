@@ -238,3 +238,44 @@ font-size: 32px;
 #searchIcon:hover{
     font-size: 31px;
 }
+@media screen and (min-width: 900px){
+    #spoty{
+        width: 150px;
+        
+    }
+    h2{
+       margin-top: 30px; 
+    }
+    #listen{
+        width: 500px;
+        height: 50px;
+        margin-left: -260px;
+        
+    }
+    #searchIcon{
+        font-size: 30px;
+        margin-left: -100px;
+        
+    }
+    footer article{
+        width: 1000px;
+        margin-left: 412px;
+    }
+    #homeButton, #cercaButton, #libraryButton{
+        margin-right: 100px;
+       
+    }
+    p{
+        margin-right: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
