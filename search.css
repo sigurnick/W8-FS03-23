@@ -207,6 +207,7 @@ font-size: 25px;
 #cercaButton:hover,
 #libraryButton:hover{
 font-size: 32px;
+
 }
 
 
@@ -215,8 +216,25 @@ font-size: 32px;
 }
 
 #listen{
-    color: rgb(156, 155, 155);
-    margin-left: 10px;
-    font-size: 18px;
-    
+    border: none;
+    background-color: rgb(33, 37, 41);
+    font-size: 20px;
+    width: 350px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 20px;
+    color: white;
+
+}
+
+
+#searchIcon{
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#searchIcon:hover{
+    font-size: 32px;
 }
