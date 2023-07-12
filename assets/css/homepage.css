@@ -1,34 +1,39 @@
-@import url(./circular-font.css);
-
-
 body{
-     background-color: rgb(18, 18, 18) !important;
-}
-#user-avatar{
-    width: 35px;
-}
-
-
-#artist-img{
-    width: 40px;
+    background-color: rgb(18, 18, 18) !important;
 }
 
 button{
     all: unset !important;
     cursor: pointer !important;
-
-  
+}
+#user-avatar{
+    width: 35px;
 }
 
-#play-button{
-    background-color: rgb(1, 101, 1) !important;
-   
-   
+.card{
+    background-color: rgb(24, 24, 24) !important;
+
+}
+.card:hover{
+    background-color: rgb(40,40,40) !important;
 }
 
+a{
+    text-decoration: none !important;
+}
 
+.play-button{
+    box-shadow: 3px 3px 35px 3px #000000 !important;
+    background-color: rgb(101,190,110) !important;
+    position: absolute !important;
+    bottom: 35px !important;
+    right: 35px !important;
+}
+.play-button:hover{
+    scale: 1.1 !important;
+    background-color: rgb(101,212,110) !important;
 
-
+}
 
 
 
@@ -73,7 +78,3 @@ button{
 .ancore-aside:hover {
     background-color: #6b706a;
 }
-
-
-
-
