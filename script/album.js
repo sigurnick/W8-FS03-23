@@ -1,3 +1,13 @@
+
+function goBack() {
+	window.history.back();
+	console.log('We are in previous page');
+}
+function goForward() {
+	window.history.forward();
+	console.log('We are in next page');
+}
+
 //----------------------------------funzione per prendere il colore medio di un immagine-----------------------------------------
 
 // crea un canvas con l'immagine e ne ritorno il context 2d
@@ -81,11 +91,13 @@ const convertSecondsInMinutes = function (seconds) {
 // let params = new URLSearchParams(location.search);
 
 // let q = params.get("q");
-
-
+const addressBarContent = new URLSearchParams(location.search);
+const albumId = addressBarContent.get("id");
+console.log(albumId);
+const urlAlbum = 'https://striveschool-api.herokuapp.com/api/deezer/album/' + albumId
 const getAlbum = function () {
 
-const urlAlbum ="https://striveschool-api.herokuapp.com/api/deezer/album/75621072";
+//const urlAlbum ="https://striveschool-api.herokuapp.com/api/deezer/album/75621032";
 //const urlAlbum ="https://striveschool-api.herokuapp.com/api/deezer/search?q=innamorato";
 
 
@@ -192,17 +204,17 @@ const urlAlbum ="https://striveschool-api.herokuapp.com/api/deezer/album/7562107
 
           <div>
             <h4 class="text-white">${e.title}</h4>
-            <h6>${e.artist.name}</h6>
+            <h6 class="text-secondary">${e.artist.name}</h6>
           </div>
         </div>
       </div>
 
       <div class="col col-4 d-none d-lg-block">
-        <div>2357657</div>
+        <div class="text-secondary">2357657</div>
       </div>
 
       <div class="col col-1 d-none d-lg-block">
-        <div>${songDuration}</div>
+        <div class="text-secondary">${songDuration}</div>
       </div>
 
       <div class="col col-1 d-lg-none">

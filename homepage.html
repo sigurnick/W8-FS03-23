@@ -15,20 +15,36 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <main class="p-3">
       <!-- --------------------Top section-------------------- -->
       <div>
         <!-- dextop top bar -->
-        <div class="d-none d-lg-block">
+        <div class="d-none d-lg-block position-fixed w-100 top-0 pt-3 z-3">
           <div class="w-100 d-flex justify-content-between">
             <div class="mb-3">
-              <i class="bi bi-arrow-left-circle text-white fs-2 me-3"></i>
-              <i class="bi bi-arrow-right-circle text-white fs-2"></i>
+              <button id="back" onclick="goBack()" >
+                <i class="forward-icon fas fa-chevron-circle-left fs-2"></i
+                  >
+
+              </button>
+
+              <button id="forward" onclick="goForward()">
+                <i class="forward-icon fas fa-chevron-circle-right fs-2"></i
+                  >
+              </button>
             </div>
 
-            <div>
+            <div class="pe-5">
               <img
                 id="user-avatar"
                 src="./assets/imgs/user avatar.png"
@@ -55,8 +71,10 @@
       <h3 class="text-white mt-5 mb-4">Popular Albumn</h3>
       <div class="container">
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+
+          <!-- album 1 -->
           <div class="col">
-            <a href="./album.html?q=innamorato">
+            <a href="./album.html?id=429691697">
               <div class="card">
                 <div class="position-relative">
                   <img
@@ -64,21 +82,126 @@
                     class="card-img-top p-4 rounded-5"
                   />
 
-                  <button class="play-button d-none rounded-5 px-2 border-0">
+                  <button class="play-button d-none rounded-circle px-2 border-0">
                     <i class="bi bi-play-fill text-black fs-1"></i>
                   </button>
                 </div>
                 <div class="px-4 pb-3">
-                  <h5 class="card-title text-white">Card title</h5>
+                  <h5 class="card-title text-white">Innamorato</h5>
                   <p class="card-text text-secondary">
-                    Some quick example text
+                    Blanco
                   </p>
                 </div>
               </div>
             </a>
           </div>
+
+          <!-- album 2 -->
+          <div class="col">
+            <a href="./album.html?id=445994175">
+              <div class="card">
+                <div class="position-relative">
+                  <img
+                    src="https://ondarock.it/images/cover/fakenews_1670843320.jpg"
+                    class="card-img-top p-4 rounded-5"
+                  />
+
+                  <button class="play-button d-none rounded-circle px-2 border-0">
+                    <i class="bi bi-play-fill text-black fs-1"></i>
+                  </button>
+                </div>
+                <div class="px-4 pb-3">
+                  <h5 class="card-title text-white">Fake News</h5>
+                  <p class="card-text text-secondary">
+                    Pinguini Tattici Nucleari
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- album 3 -->
+          <div class="col">
+            <a href="./album.html?id=392593607">
+              <div class="card">
+                <div class="position-relative">
+                  <img
+                    src="https://a6p8a2b3.stackpathcdn.com/yEoQ48-79ff4dgi0-v0KyEmuFao=/1200x1200/smart/rockol-img/img/foto/upload/my-soft-machine-arlo-parks-cover-ts1685152822.jpeg"
+                    class="card-img-top p-4 rounded-5"
+                  />
+
+                  <button class="play-button d-none rounded-circle px-2 border-0">
+                    <i class="bi bi-play-fill text-black fs-1"></i>
+                  </button>
+                </div>
+                <div class="px-4 pb-3">
+                  <h5 class="card-title text-white">MY Soft Machine</h5>
+                  <p class="card-text text-secondary">
+                    Arlo Parks
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+            <!-- album 4 -->
+            <div class="col">
+              <a href="./album.html?id=392593607">
+                <div class="card">
+                  <div class="position-relative">
+                    <img
+                      src="https://a6p8a2b3.stackpathcdn.com/yEoQ48-79ff4dgi0-v0KyEmuFao=/1200x1200/smart/rockol-img/img/foto/upload/my-soft-machine-arlo-parks-cover-ts1685152822.jpeg"
+                      class="card-img-top p-4 rounded-5"
+                    />
+  
+                    <button class="play-button d-none rounded-circle px-2 border-0">
+                      <i class="bi bi-play-fill text-black fs-1"></i>
+                    </button>
+                  </div>
+                  <div class="px-4 pb-3">
+                    <h5 class="card-title text-white">MY Soft Machine</h5>
+                    <p class="card-text text-secondary">
+                      Arlo Parks
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
         </div>
       </div>
+
+
+
+
+
+         <!-- ----------------Popular Artist------------------ -->
+         <h3 class="text-white mt-5 mb-4">Popular Artists</h3>
+         <div class="container">
+           <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+             <div class="col">
+               <a href="./album.html?429691697">
+                 <div class="card">
+                   <div class="position-relative">
+                     <img
+                       src="https://media.gqitalia.it/photos/614c599de5f23a4cbf35ebd9/1:1/pass/Blanco%2520credits%2520by%2520%2520Bogdan%2520Chilldays%2520Plakov.jpg"
+                       class="card-img-top p-4 rounded-circle"
+                     />
+   
+                     <button class="play-button d-none rounded-circle px-2">
+                       <i class="bi bi-play-fill text-black fs-1 text-center"></i>
+                     </button>
+                   </div>
+                   <div class="px-4 pb-3">
+                     <h5 class="card-title text-white">Blanco</h5>
+                     <p class="card-text text-secondary">
+                       Artist
+                     </p>
+                   </div>
+                 </div>
+               </a>
+             </div>
+           </div>
+         </div>
     </main>
 
     <script
