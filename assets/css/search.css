@@ -1,7 +1,8 @@
 body{
-    height: 100%;
+    height:100%;
     background-image: url(https://img.freepik.com/premt-background-black-night-dark-evening-with-space-text-backgroundx9_661047-5058.jpg);
     font-family: 'Cabin', sans-serif;
+    
 }
 #spotSong{
     color: rgb(156, 155, 155);
@@ -12,6 +13,13 @@ body{
     
     
 }
+
+#spoty{
+    width: 100px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
 #card1{
     background-color: orangered;
    position: relative;
@@ -162,22 +170,71 @@ body{
     border-radius: 5px 5px 5px 5px;
 }
 #miniBox{
-    width: 100px;
+    width: 130px;
     height: 100px;
     display: flex;
     justify-content: space-between;
     
     font-size: 30px;
 }
-#contentPlayer {
+#heart1{
     cursor: pointer;
 }
+#play1{
+    margin-left: 18px;
+    cursor: pointer;
+}
+#device1{
+    margin-right: 18px;
+    cursor: pointer;
+}
+#device1:hover,
+#play1:hover,
+#heart1:hover{
+  font-size: 32px;
+
+}
+
 #homeButton, 
 #cercaButton, 
 #libraryButton {
 cursor: pointer ;
 font-size: 25px;
 }
+
+
+#homeButton:hover,
+#cercaButton:hover,
+#libraryButton:hover{
+font-size: 32px;
+
+}
+
+
 #paragh{
     cursor: pointer;
+}
+
+#listen{
+    border: none;
+    background-color: rgb(33, 37, 41);
+    font-size: 20px;
+    width: 350px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 20px;
+    color: white;
+
+}
+
+
+#searchIcon{
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#searchIcon:hover{
+    font-size: 31px;
 }
