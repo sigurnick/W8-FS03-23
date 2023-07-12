@@ -29,3 +29,51 @@ button{
 
 
 
+
+
+
+
+
+/* -------nav aside------ */
+.position-aside{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #121212;
+}
+.altezza-aside {
+    position: sticky;
+    top: 0;
+    overflow:scroll;
+    height: 100vh;
+}
+.img-album-song {
+    width: 90px;
+}
+.img-album-song-aside {
+    width: 50px;
+    border-radius: 10px;
+}
+.hover-aside{
+    padding: 10px;
+    border-radius: 100px;
+}
+.hover-aside:hover{
+    background-color:#242424;
+}
+.hover-col-brani:hover{
+    background-color: #242424;
+}
+.hover-ancor-brani{
+    color: white;
+}
+.hover-ancor-brani:hover{
+    color: #2dce67;
+}
+.ancore-aside:hover {
+    background-color: #6b706a;
+}
+
+
+
+
