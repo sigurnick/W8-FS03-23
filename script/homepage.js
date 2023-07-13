@@ -161,6 +161,31 @@ const getpopRow = function () {
 
 
 
+//------------------------------------------------Album popular----------------------------------------------------
+const albumUrl = "https://striveschool-api.herokuapp.com/api/deezer/charts";
+
+const getAlbumRow = function () {
+  fetch(albumUrl)
+    .then((res) => {
+      if (res.ok) {
+        return res.json();
+      } else {
+        throw new Error("Errore nel recupero dell' album");
+      }
+    })
+    .then((data) => {
+      console.log('album',data);
+
+      
+
+     
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
+//----------------------------------------------------------------------------------------------------
+
 
 
 
