@@ -24,7 +24,7 @@ a{
 
 .play-button{
     box-shadow: 3px 3px 35px 3px #000000 !important;
-    background-color: rgb(101,190,110) !important;
+    background-color: rgb(31, 200, 101) !important;
     position: absolute !important;
     bottom: 35px !important;
     right: 35px !important;
@@ -101,3 +101,14 @@ a{
 #nav-mobile{
     margin-top: 200px !important;
 }
+
+
+
+a{
+    text-decoration: none !important;
+}
+a:hover{
+    text-decoration: underline !important;
+    text-decoration-color: rgb(31, 200, 101) !important;
+}
+

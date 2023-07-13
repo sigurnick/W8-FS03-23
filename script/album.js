@@ -161,7 +161,18 @@ const getAlbum = function () {
       const albumDurations = document.getElementById("album-duration");
 
       //inserisco valori nell' HTML
-      artistName.innerText = data.contributors[0].name; //nome artista
+
+      artistName.innerHTML = `
+     <a href="./artist2.html?id=${data.artist.id}">
+     
+     <h4  class="text-white mb-0">
+     ${data.artist.name}
+   </h4>
+     </a>
+
+      
+      `
+
       albumName.innerText = data.title; //nome album
       albumYear.innerHTML = `&middot; ${data.release_date.slice(
         0,
