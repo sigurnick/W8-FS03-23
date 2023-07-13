@@ -1,7 +1,8 @@
 /* INIZIO STILE NAV */
 body{
-    margin-bottom: 40%;
+    margin-bottom: 90%;
     background-color: #121212;
+    height: 100vh;
     
 }
 .bg-nav-mobile {
@@ -141,9 +142,12 @@ main {
 .hover-aside:hover{
     background-color:#242424;
 }
-.hover-col-brani:hover{
-    background-color: #242424;
+#brani-popolari {
+    width: 100%;
 }
+/* .hover-col-brani:hover{
+    background-color: #242424;
+} */
 .hover-ancor-brani{
     color: white;
 }
@@ -202,6 +206,10 @@ main {
 .forward-icon:hover {
     color: #121212;
 }
+#immagini-artisti {
+    background-image: url();
+}
+
 
 @media screen and (max-width:576px) {
     .check-album-text{
