@@ -76,4 +76,16 @@ button{
 
 
 
+/* nav mobile */
+.bg-nav-mobile {
+    
+    width: 100vh;
+    height: 150px;
+    position:fixed;
+    bottom: 0;
+    background-color: #121212;
+    z-index: 9999;
+    background-color: RGBA(0,0,0,0.8);
+    
+}
 

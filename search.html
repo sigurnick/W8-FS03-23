@@ -33,7 +33,7 @@
       <div class="position-aside d-flex flex-column">
         <a
           class="hover-aside text-decoration-none text-white fs-5 mb-3 mt-3"
-          href=""
+          href="./homepage.html"
           ><i class="icon-aside fas fa-home"></i>Home</a
         >
         <a
@@ -105,28 +105,7 @@
           Milla Ellis Wood
         </p>
       </div>
-      <div class="d-flex align-items-end">
-        <img
-          class="img-album-song-aside mt-3"
-          src="assets/imgs/main/image-12.jpg"
-          alt=""
-        />
-        <p class="text-white mb-0 ms-3">
-          song that feel like the i swear i was infinite ... Playlist -
-          Milla Ellis Wood
-        </p>
-      </div>
-      <div class="d-flex align-items-end">
-        <img
-          class="img-album-song-aside mt-3"
-          src="assets/imgs/main/image-12.jpg"
-          alt=""
-        />
-        <p class="text-white mb-0 ms-3">
-          song that feel like the i swear i was infinite ... Playlist -
-          Milla Ellis Wood
-        </p>
-      </div>
+     
       <div class="d-flex align-items-end">
         <img
           class="img-album-song-aside mt-3"
@@ -158,42 +137,55 @@
     <!-- ----------------------Main--------------------- -->
     <div class="col col-sm-12 col-lg-9 position-relative">
 
-  
+    <!-- dextop top bar -->
+    <div
+    class="d-none d-lg-block position-fixed w-100 top-0 pt-3 z-3"
+  >
+    <div class="w-100 d-flex justify-content-between">
+      <div class="mb-3">
+        <button id="back" onclick="goBack()">
+          <i
+            class="forward-icon fas fa-chevron-circle-left fs-2"
+          ></i>
+        </button>
+
+        <button id="forward" onclick="goForward()">
+          <i
+            class="forward-icon fas fa-chevron-circle-right fs-2"
+          ></i>
+        </button>
+      </div>
+
+      <div class="pe-5">
+        <img
+          id="user-avatar"
+          src="./assets/imgs/user avatar.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
 
       <main>
 
          
-        <div class="container">
-        <header>
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col col-md-6  text-start text-light ms-3"><h2>Cerca</h2></div>
-                <div class="col col-md-6 offset-lg-10"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/800px-Spotify_logo_with_text.svg.png" id="spoty"> </div>
-            </div>
-                <div class="row mt-5">
-                <div class="col col-2 col-md-2 offset-lg-4  ">
-                  <i class="fas fa-search" style="color: #bbb9b9;" id="searchIcon"></i>
-                </div>
-                           <div class="col col-10 col-md-6">
-                                <form>
-                                 <input type="text" placeholder="Cosa vuoi ascoltare?" id="listen">
-                                 <button type="submit" class="fs-3">Cerca</button>
-                                </form>
-                             
-                           </div>
-                    
-                
-            </div>
-        </div>
-    </div>
-</header>
+
+<!-- -----------Barra di ricerca-------- -->
+<div class="d-flex justify-content-center my-5">
+
+  <form>
+    <input type="text" placeholder="Cosa vuoi ascoltare?" id="listen">
+    <button type="submit" class="fs-3"><i class="fas fa-search" style="color: #bbb9b9;" id="searchIcon"></i></button>
+   </form>
+
+</div>
 
    
 
-<section id="categorie">
+<section id="categorie" class="mt-5">
 
-
-  <h3 class="text-light text-center mt-4">Sfoglia tutto</h3>
+<!-- ----------------------------------------Categorie----------------------------------- -->
+  <h3 class="text-light text-center mt-5">Sfoglia tutto</h3>
     <div class="container">
         <div class="row ms-2 gy-3 mt-1 me-2">
             <div class="col col-6 col-lg-3">
@@ -353,18 +345,19 @@
     </div>
     <!-- -----------------------------------Fine main---------------------------------------------- -->
   </div>
+  <!-- --------------------Nav mobile---------------- -->
   <div class="row cols d-sm-block cols d-lg-none">
     <div
       class="bg-nav-mobile col col-12 d-flex justify-content-evenly align-items-center position-fixed bottom-0"
     >
       <a
         class="text-white d-flex flex-column text-center text-decoration-none fs-3"
-        href="#"
+        href="./homepage.html"
         ><i class="fas fa-home"></i>Home</a
       >
       <a
         class="text-white d-flex flex-column text-center text-decoration-none fs-3"
-        href="#"
+        href="./search.html"
         ><i class="fas fa-search"></i>Search</a
       >
       <a
