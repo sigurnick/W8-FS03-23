@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(18, 18, 18) !important;
+    background-color: #121212 !important;
 }
 
 button{
@@ -77,4 +77,17 @@ a{
 }
 .ancore-aside:hover {
     background-color: #6b706a;
+}
+
+/* nav mobile */
+.bg-nav-mobile {
+    
+    width: 100vh;
+    height: 150px;
+    position:fixed;
+    bottom: 0;
+    background-color: #121212;
+    z-index: 9999;
+    background-color: RGBA(0,0,0,0.8);
+    
 }
