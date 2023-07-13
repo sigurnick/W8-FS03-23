@@ -48,10 +48,9 @@ fetch(URL + artistId) // + artistId)
     // mi creo un template literal e popolo dinamicamente il contenitore
     playlistAside.innerHTML = `
     <div id="libreria-aside" class="d-flex align-items-end">
-    <div style="background-image:url(${detail.picture}); height : 700px"></div>
             <img
               class="img-album-song-aside mt-5"
-              src=""
+              src="${detail.picture}"
               alt=""
             />
             <p class="text-white mb-0 ms-3">

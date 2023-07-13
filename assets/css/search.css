@@ -311,6 +311,12 @@ font-size: 32px;
 .hover-ancor-brani:hover{
     color: #2dce67;
 }
+.ancore-aside {
+    background-color: #242424;
+    border-radius: 100px;
+    width: 90px;
+    text-align: center;
+}
 .ancore-aside:hover {
     background-color: #6b706a;
 }
