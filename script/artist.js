@@ -9,13 +9,13 @@ function goForward() {
 
 
 // endpoint per il recupero dell' id degli artisti
-const URL = 'https://striveschool-api.herokuapp.com/api/deezer/artist/412'
+const URL = 'https://striveschool-api.herokuapp.com/api/deezer/artist/'
 // recuperiamo il parametro "id" della address bar:
 const addressBarcontent = new URLSearchParams(location.search)
-// const artistId = addressBarcontent.get('id')
-// console.log('ARTISTID', artistId)
-// console.log(URL + artistId)
-// Creo una funzione che mi converte la durata delle canzoni da secondi in minuti
+const artistId = addressBarcontent.get('id')
+console.log('ARTISTID', artistId)
+console.log(URL + artistId)
+//Creo una funzione che mi converte la durata delle canzoni da secondi in minuti
 const convertSecondsInMinutes = function (seconds) {
     let minutes = Math.floor(seconds / 60);
     let extraSeconds = seconds % 60;
@@ -28,7 +28,7 @@ const convertSecondsInMinutes = function (seconds) {
     return minutes + ":" + extraSeconds;
   };
   //faccio una fetch per i dettagli del singolo artista recuperato dalla barra degli indirizzi
-fetch(URL) // + artistId)
+fetch(URL + artistId) // + artistId)
 .then((res) => {
     if(res.ok){
         return res.json()
