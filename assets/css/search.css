@@ -188,12 +188,7 @@ body{
     margin-right: 18px;
     cursor: pointer;
 }
-#device1:hover,
-#play1:hover,
-#heart1:hover{
-  font-size: 32px;
 
-}
 
 #homeButton, 
 #cercaButton, 
@@ -203,12 +198,7 @@ font-size: 25px;
 }
 
 
-#homeButton:hover,
-#cercaButton:hover,
-#libraryButton:hover{
-font-size: 32px;
 
-}
 
 
 #paragh{
@@ -235,10 +225,8 @@ font-size: 32px;
     margin-top: 10px;
     cursor: pointer;
 }
-#searchIcon:hover{
-    font-size: 31px;
-}
-@media screen and (min-width: 900px){
+
+/* @media screen and (min-width: 900px){
     #spoty{
         width: 150px;
         
@@ -265,10 +253,8 @@ font-size: 32px;
         margin-right: 100px;
        
     }
-    /* p{
-        margin-right: 100px;
-    } */
-}
+   
+} */
 
 
 
@@ -372,4 +358,18 @@ a{
     scale: 1.1 !important;
     background-color: rgb(101,212,110) !important;
 
+}
+
+#footer-search{
+    margin-top: 500px;
+}
+
+a{
+    text-decoration: none !important;
+}
+a:hover{
+    text-decoration: underline !important;
+    text-decoration-color: rgb(31, 200, 101) !important;
+
+   
 }
