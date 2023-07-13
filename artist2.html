@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Artists</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/artists.css" />
+  </head>
+  <body>
+    <!-- INIZIO ASIDE SINISTRA MENU-NAV -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="altezza-aside col d-none col d-lg-flex col-md-3 d-flex flex-column"
+        >
+          <div class="position-aside d-flex flex-column">
+            <a
+              class="hover-aside text-decoration-none text-white fs-5 mb-3 mt-3"
+              href=""
+              ><i class="icon-aside fas fa-home"></i>Home</a
+            >
+            <a
+              class="hover-aside text-decoration-none text-white fs-5 mb-3"
+              href=""
+              ><i class="icon-aside fas fa-search"></i>Cerca</a
+            >
+
+            <hr class="text-white" />
+            <a
+              class="hover-aside text-decoration-none text-white fs-5 mb-3"
+              href=""
+              ><i class="icon-aside bi bi-collection-play-fill"></i>La tua
+              libreria</a
+            >
+            <div class="d-flex justify-content-evenly mb-3">
+              <a class="ancore-aside text-decoration-none text-white" href=""
+                >Playlist</a
+              >
+              <a class="ancore-aside text-decoration-none text-white" href=""
+                >Artisti</a
+              >
+              <a class="ancore-aside text-decoration-none text-white" href=""
+                >Album</a
+              >
+            </div>
+          </div>
+
+          <div id="libreria-aside" class="d-flex align-items-end">
+            <!-- <img
+              class="img-album-song-aside mt-5"
+              src="assets/imgs/main/image-12.jpg"
+              alt=""
+            />
+            <p class="text-white mb-0 ms-3">
+              song that feel like the i swear i was infinite ... Playlist -
+              Milla Ellis Wood
+            </p> -->
+          </div>
+          <div id="title-album-artist"></div>
+          <!--  -->
+        </div>
+        <!-- FINE ASIDE SINISTRA -->
+        <!-- INIZO HEADER - IMMAGINE ALBUM ARTISTI -->
+        <div id="spinner-box" class="justify-content-center">
+          <div class="d-flex justify-content-center">
+            <div class="spinner-border text-success" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-12 col-lg-9 position-relative">
+          <div class="position-relative">
+            <div id="immagine-artisti">
+              <!-- <img
+                class="img-fluid bg-album"
+                src="assets/imgs/main/Pinguini-tattici-nucleari.jpg.webp"
+                alt=""
+              /> -->
+            </div>
+            <a class="position-absolute text-white back" href=""
+              ><i class="back-icon fas fa-chevron-circle-left"></i
+            ></a>
+            <a class="position-absolute text-white forward" href=""
+              ><i class="forward-icon fas fa-chevron-circle-right"></i
+            ></a>
+            <img
+              class="position-absolute check-album"
+              src="653-6533429_verified-artist-spotify-clipart-social-media-verified.png.jpeg"
+              alt=""
+            />
+            <span class="check-album-text text-white fs-4 position-absolute"
+              >Artista verificato</span
+            >
+
+            <h1
+              id="nome-artista"
+              class="fs-2-lg position-absolute text-white fw-bold title-album mb-0"
+            >
+              <!-- Inserisco dinamicamente il titolo artista -->
+            </h1>
+          </div>
+          <!-- FINE HEADER ALBUM ARTISTI -->
+          <!-- INIZIO MAIN CONTENUTO BRANI -->
+          <div class="d-flex align-items-center">
+            <a class="text-decoration-none button-play" href=""
+              ><i class="fas fa-play-circle"></i
+            ></a>
+            <a class="following-ancor ms-5 text-decoration-none" href=""
+              >FOLLOWING</a
+            >
+            <a class="text-decoration-none ms-5 fs-5" href=""
+              ><i class="hover-ellipse fas fa-ellipsis-h"></i
+            ></a>
+          </div>
+          <h3 class="text-white mt-3 mb-5">Popolari</h3>
+          <div class="row flex-column">
+            <div
+              class="hover-col-brani col col-12 d-flex align-items-baseline justify-content-between gy-2"
+            >
+              <div id="brani-popolari">
+                <!-- <div class="d-flex align-items-center">
+                <span class="text-white fs-4 me-3">1</span>
+                <img
+                  class="img-album-song"
+                  src="assets/imgs/main/image-15.jpg"
+                  alt="album"
+                />
+                <div class="d-flex flex-column align-items-baseline">
+                  <a class="hover-ancor-brani text-decoration-none ms-3" href=""
+                    >Rubami la notte</a
+                  >
+                  <p class="p-hidden text-white">18,591,546</p>
+                </div>
+              </div>
+              <span class="span-hidden text-white fs-6">18,591,546</span>
+              <span class="text-white fs-6 me-3">3:09</span> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- FINE CONTENUTO BRANI -->
+        </div>
+      </div>
+      <div class="row cols d-sm-block cols d-lg-none">
+        <div
+          class="bg-nav-mobile col col-12 d-flex justify-content-evenly align-items-center position-fixed bottom-0"
+        >
+          <a
+            class="text-white d-flex flex-column text-center text-decoration-none fs-3"
+            href="#"
+            ><i class="fas fa-home"></i>Home</a
+          >
+          <a
+            class="text-white d-flex flex-column text-center text-decoration-none fs-3"
+            href="#"
+            ><i class="fas fa-search"></i>Search</a
+          >
+          <a
+            class="text-white d-flex flex-column text-center text-decoration-none fs-3"
+            href="#"
+            ><i class="bi bi-collection-play-fill"></i>La tua Libreria</a
+          >
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/artist.js"></script>
+  </body>
+</html>

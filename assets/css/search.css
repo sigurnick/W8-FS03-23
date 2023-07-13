@@ -1,0 +1,356 @@
+body{
+    height:100%;
+    background-color:#121212;
+    font-family: 'Cabin', sans-serif;
+    
+}
+#spotSong{
+    color: rgb(156, 155, 155);
+    margin-top: 2px;
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    
+    
+}
+
+#spoty{
+    width: 100px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+#card1{
+    background-color: orangered !important;
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+   }
+ #card1 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
+
+#card2{
+    background-color: rgba(43, 43, 139, 0.575) !important;
+    position: relative;
+   overflow: hidden;
+   cursor: pointer;
+}
+#card2 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
+#card3{
+    background-color: rgb(255, 0, 106) !important;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#card3 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
+#card4{
+    background-color: green !important;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#card4 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
+#card5{
+    background-color: orange !important;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#card5 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
+#card6{
+    background-color: rgb(202, 82, 38) !important;
+    position: relative;
+   overflow: hidden;
+   cursor: pointer;
+}
+#card6 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
+#card7{
+    background-color: fuchsia !important;
+    position: relative;
+   overflow: hidden;
+   cursor: pointer;
+}
+#card7 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
+#card8{
+    background-color: violet !important;
+    position: relative;
+   overflow: hidden;
+   cursor: pointer;
+}
+#card8 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    bottom: -3px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 50px 20px;
+    transform: rotate(30deg);
+    
+ }
+#boxPlay{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 50px;
+    padding-right: 20px;
+    
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px 5px 5px 5px;
+}
+#miniBox{
+    width: 130px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 30px;
+}
+#heart1{
+    cursor: pointer;
+}
+#play1{
+    margin-left: 18px;
+    cursor: pointer;
+}
+#device1{
+    margin-right: 18px;
+    cursor: pointer;
+}
+#device1:hover,
+#play1:hover,
+#heart1:hover{
+  font-size: 32px;
+
+}
+
+#homeButton, 
+#cercaButton, 
+#libraryButton {
+cursor: pointer ;
+font-size: 25px;
+}
+
+
+#homeButton:hover,
+#cercaButton:hover,
+#libraryButton:hover{
+font-size: 32px;
+
+}
+
+
+#paragh{
+    cursor: pointer;
+}
+
+#listen{
+    border: none;
+    background-color: rgb(33, 37, 41);
+    font-size: 20px;
+    width: 350px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 20px;
+    color: white;
+
+}
+
+
+#searchIcon{
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#searchIcon:hover{
+    font-size: 31px;
+}
+@media screen and (min-width: 900px){
+    #spoty{
+        width: 150px;
+        
+    }
+    h2{
+       margin-top: 30px; 
+    }
+    #listen{
+        width: 500px;
+        height: 50px;
+        margin-left: -260px;
+        
+    }
+    #searchIcon{
+        font-size: 30px;
+        margin-left: -100px;
+        
+    }
+    footer article{
+        width: 1000px;
+        margin-left: 412px;
+    }
+    #homeButton, #cercaButton, #libraryButton{
+        margin-right: 100px;
+       
+    }
+    /* p{
+        margin-right: 100px;
+    } */
+}
+
+
+
+
+
+
+/* -------nav aside------ */
+.position-aside{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #121212;
+}
+.altezza-aside {
+    position: sticky;
+    top: 0;
+    overflow:scroll;
+    height: 100vh;
+}
+.img-album-song {
+    width: 90px;
+}
+.img-album-song-aside {
+    width: 50px;
+    border-radius: 10px;
+}
+.hover-aside{
+    padding: 10px;
+    border-radius: 100px;
+}
+.hover-aside:hover{
+    background-color:#242424;
+}
+.hover-col-brani:hover{
+    background-color: #242424;
+}
+.hover-ancor-brani{
+    color: white;
+}
+.hover-ancor-brani:hover{
+    color: #2dce67;
+}
+.ancore-aside:hover {
+    background-color: #6b706a;
+}
+
+
+
+
+
+button{
+    all: unset !important;
+    cursor: pointer !important;
+}
+
+/* card */
+
+#user-avatar{
+    width: 35px;
+}
+
+.card{
+    background-color: rgb(24, 24, 24) !important;
+
+}
+.card:hover{
+    background-color: rgb(40,40,40) !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.play-button{
+    box-shadow: 3px 3px 35px 3px #000000 !important;
+    background-color: rgb(101,190,110) !important;
+    position: absolute !important;
+    bottom: 35px !important;
+    right: 35px !important;
+}
+.play-button:hover{
+    scale: 1.1 !important;
+    background-color: rgb(101,212,110) !important;
+
+}

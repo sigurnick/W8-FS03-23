@@ -1,16 +1,16 @@
 /* INIZIO STILE NAV */
 body{
-    margin-bottom: 20%;
+    margin-bottom: 40%;
     background-color: #121212;
     
 }
-nav {
-    width: 100%;
+.bg-nav-mobile {
+    height: 150px;
     position:fixed;
     bottom: 0;
     background-color: #121212;
     z-index: 9999;
-    background-color: RGBA(0,0,0,0.5);
+    background-color: RGBA(0,0,0,0.8);
     
 }
 /* FINE STILE NAV */
@@ -35,9 +35,33 @@ h1 {
     filter: brightness(0.9);
 }
 .title-album {
-    bottom: 15%;
+    top: 70%;
     left: 3%;
+    font-size: 1.8em;
 }
+.check-album {
+    top: 50%;
+    left: 4%;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #008bf5;
+    background-color: transparent;
+}
+.check-album-text {
+    top: 76.5%;
+    left: 7%;
+    border-radius: 100%;
+    background-color: #008bf5;
+    background-color: transparent;
+}
+
+.title-album-2 {
+    top: 90%;
+    left: 3%;
+    font-size: 2em;
+}
+
 .bg-album {
     filter: brightness(0.7);
 }
@@ -56,10 +80,19 @@ main {
     color: #2dce67;
     font-size: 3em;
 }
-#pause-icon {
+.button-play {
+    color:#2dce67;
+    font-size: 4em;
+    margin-left: 1%;
+}
+.button-play:hover{
+    opacity: 0.5;
+}
+.hover-ellipse {
+    color: white;
+}
+.hover-ellipse:hover{
     color: #2dce67;
-    border-color: #2dce67;
-    font-size: 3em;
 }
 .img-preferiti {
     width: 80px;
@@ -82,3 +115,190 @@ main {
 .img-album-song {
     width: 90px;
 }
+.img-album-song-aside {
+    width: 50px;
+    border-radius: 10px;
+}
+.altezza-aside {
+    position: sticky;
+    top: 0;
+    overflow:scroll;
+    height: 100vh;
+}
+.position-aside{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #121212;
+}
+.icon-aside {
+    margin-right:10% ;
+}
+.hover-aside{
+    padding: 10px;
+    border-radius: 100px;
+}
+.hover-aside:hover{
+    background-color:#242424;
+}
+.hover-col-brani:hover{
+    background-color: #242424;
+}
+.hover-ancor-brani{
+    color: white;
+}
+.hover-ancor-brani:hover{
+    color: #2dce67;
+}
+.following-ancor {
+    border: none;
+    background-color: #121212;
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    border: 1px solid white;
+    padding: 3px;
+    text-align: center;
+    width: 130px;
+}
+.following-ancor:hover{
+    background-color: #2dce67;
+    color: black;
+    border: #121212;
+}
+.crea-playlist {
+    color: grey;
+}
+
+.ancore-aside {
+    background-color: #242424;
+    border-radius: 100px;
+    width: 90px;
+    text-align: center;
+}
+.ancore-aside:hover {
+    background-color: #6b706a;
+}
+.back{
+    top: 2%;
+    left: 1%;
+    font-size: 1.5em;
+    color: #2dce67;
+}
+.forward {
+    top: 2%;
+    left: 4%;
+    font-size: 1.5em;
+}
+.back-icon{
+    color: rgba(0, 0, 0,0.5);
+}
+.forward-icon {
+    color: rgba(0, 0, 0,0.5);
+}
+.back-icon:hover{
+    color: #121212;
+}
+.forward-icon:hover {
+    color: #121212;
+}
+
+@media screen and (max-width:576px) {
+    .check-album-text{
+        top: 59.7%;
+        left: 11%;
+    }
+    .check-album{
+        top: 60%;
+    }
+    .back{
+        left: 4%;
+    }
+    .forward{
+        left: 12%;
+    }
+    .img-album-song {
+        width: 50px;
+    }
+    .hover-ancor-brani{
+        font-size: 1.5em;
+    }
+    .span-hidden{
+        display: none;
+    }
+    .p-hidden{
+        visibility: visible;
+    }
+    .bg-nav-mobile{
+        justify-content: space-between !important;
+    }
+}
+@media screen and (min-width:576px) {
+    .check-album-text{
+        top:62%;
+        left: 10%;
+    }
+    .check-album{
+        top: 62.8%;
+    }
+    .back{
+        left: 4%;
+    }
+    .forward{
+        left: 10%;
+    }
+    .hover-ancor-brani{
+        font-size: 1.5em;
+    }
+    .span-hidden{
+       visibility: visible;
+    }
+    .p-hidden{
+       display: none;
+    }
+}
+    
+
+@media screen and (min-width: 768px) {
+    .title-album{
+        font-size: 2em;
+        top: 70%;
+    }
+    .check-album{
+        top: 60%;
+    }
+    .check-album-text{
+        top: 59.5%;
+        left: 8%;
+    }
+    .hover-ancor-brani{
+        font-size: 1.5em;
+    }
+   
+}
+@media screen and (min-width: 992px) {
+    .title-album{
+        font-size: 2em;
+        top: 80%;
+    }
+    .check-album{
+        top: 76%;
+    }
+    .check-album-text{
+        top: 75.4%;
+        left: 8%;
+    }
+    .back{
+        left: 4%;
+        font-size: 2em;
+    }
+    .forward{
+        left: 9%;
+        font-size: 2em;
+    }
+    .hover-ancor-brani{
+        font-size: 1.5em;
+    }
+   
+}
+
