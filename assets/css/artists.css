@@ -1,6 +1,6 @@
 /* INIZIO STILE NAV */
 body{
-    margin-bottom: 20%;
+    margin-bottom: 40%;
     background-color: #121212;
     
 }
@@ -10,7 +10,7 @@ body{
     bottom: 0;
     background-color: #121212;
     z-index: 9999;
-    background-color: RGBA(0,0,0,0.3);
+    background-color: RGBA(0,0,0,0.8);
     
 }
 /* FINE STILE NAV */
@@ -123,7 +123,7 @@ main {
     position: sticky;
     top: 0;
     overflow:scroll;
-    height: 1200px;
+    height: 100vh;
 }
 .position-aside{
     position: sticky;
@@ -261,7 +261,7 @@ main {
 
 @media screen and (min-width: 768px) {
     .title-album{
-        font-size: 2.5em;
+        font-size: 2em;
         top: 70%;
     }
     .check-album{
@@ -278,7 +278,7 @@ main {
 }
 @media screen and (min-width: 992px) {
     .title-album{
-        font-size: 4em;
+        font-size: 2em;
         top: 80%;
     }
     .check-album{
