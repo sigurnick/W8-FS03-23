@@ -97,3 +97,7 @@ a{
     background-color: RGBA(0,0,0,0.8);
     
 }
+
+#nav-mobile{
+    margin-top: 200px !important;
+}
