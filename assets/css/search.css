@@ -1,6 +1,6 @@
 body{
     height:100%;
-    background-image: url(https://img.freepik.com/premt-background-black-night-dark-evening-with-space-text-backgroundx9_661047-5058.jpg);
+    background-color:#121212;
     font-family: 'Cabin', sans-serif;
     
 }
@@ -21,7 +21,7 @@ body{
 }
 
 #card1{
-    background-color: orangered;
+    background-color: orangered !important;
    position: relative;
    overflow: hidden;
    cursor: pointer;
@@ -39,7 +39,7 @@ body{
  }
 
 #card2{
-    background-color: rgba(43, 43, 139, 0.575);
+    background-color: rgba(43, 43, 139, 0.575) !important;
     position: relative;
    overflow: hidden;
    cursor: pointer;
@@ -56,7 +56,7 @@ body{
     
  }
 #card3{
-    background-color: rgb(255, 0, 106);
+    background-color: rgb(255, 0, 106) !important;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -73,7 +73,7 @@ body{
     
  }
 #card4{
-    background-color: green;
+    background-color: green !important;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -90,7 +90,7 @@ body{
     
  }
 #card5{
-    background-color: orange;
+    background-color: orange !important;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -107,7 +107,7 @@ body{
     
  }
 #card6{
-    background-color: rgb(202, 82, 38);
+    background-color: rgb(202, 82, 38) !important;
     position: relative;
    overflow: hidden;
    cursor: pointer;
@@ -124,7 +124,7 @@ body{
     
  }
 #card7{
-    background-color: fuchsia;
+    background-color: fuchsia !important;
     position: relative;
    overflow: hidden;
    cursor: pointer;
@@ -141,7 +141,7 @@ body{
     
  }
 #card8{
-    background-color: violet;
+    background-color: violet !important;
     position: relative;
    overflow: hidden;
    cursor: pointer;
@@ -237,4 +237,120 @@ font-size: 32px;
 }
 #searchIcon:hover{
     font-size: 31px;
+}
+@media screen and (min-width: 900px){
+    #spoty{
+        width: 150px;
+        
+    }
+    h2{
+       margin-top: 30px; 
+    }
+    #listen{
+        width: 500px;
+        height: 50px;
+        margin-left: -260px;
+        
+    }
+    #searchIcon{
+        font-size: 30px;
+        margin-left: -100px;
+        
+    }
+    footer article{
+        width: 1000px;
+        margin-left: 412px;
+    }
+    #homeButton, #cercaButton, #libraryButton{
+        margin-right: 100px;
+       
+    }
+    /* p{
+        margin-right: 100px;
+    } */
+}
+
+
+
+
+
+
+/* -------nav aside------ */
+.position-aside{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #121212;
+}
+.altezza-aside {
+    position: sticky;
+    top: 0;
+    overflow:scroll;
+    height: 100vh;
+}
+.img-album-song {
+    width: 90px;
+}
+.img-album-song-aside {
+    width: 50px;
+    border-radius: 10px;
+}
+.hover-aside{
+    padding: 10px;
+    border-radius: 100px;
+}
+.hover-aside:hover{
+    background-color:#242424;
+}
+.hover-col-brani:hover{
+    background-color: #242424;
+}
+.hover-ancor-brani{
+    color: white;
+}
+.hover-ancor-brani:hover{
+    color: #2dce67;
+}
+.ancore-aside:hover {
+    background-color: #6b706a;
+}
+
+
+
+
+
+button{
+    all: unset !important;
+    cursor: pointer !important;
+}
+
+/* card */
+
+#user-avatar{
+    width: 35px;
+}
+
+.card{
+    background-color: rgb(24, 24, 24) !important;
+
+}
+.card:hover{
+    background-color: rgb(40,40,40) !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.play-button{
+    box-shadow: 3px 3px 35px 3px #000000 !important;
+    background-color: rgb(101,190,110) !important;
+    position: absolute !important;
+    bottom: 35px !important;
+    right: 35px !important;
+}
+.play-button:hover{
+    scale: 1.1 !important;
+    background-color: rgb(101,212,110) !important;
+
 }

@@ -1,3 +1,13 @@
+
+function goBack() {
+	window.history.back();
+	console.log('We are in previous page');
+}
+function goForward() {
+	window.history.forward();
+	console.log('We are in next page');
+}
+
 //----------------------------------funzione per prendere il colore medio di un immagine-----------------------------------------
 
 // crea un canvas con l'immagine e ne ritorno il context 2d
@@ -78,12 +88,19 @@ const convertSecondsInMinutes = function (seconds) {
 
 
 
+// let params = new URLSearchParams(location.search);
+
+// let q = params.get("q");
 const addressBarContent = new URLSearchParams(location.search);
 const albumId = addressBarContent.get("id");
-
+console.log(albumId);
+const urlAlbum = 'https://striveschool-api.herokuapp.com/api/deezer/album/' + albumId
 const getAlbum = function () {
-  const urlAlbum =
-    "https://striveschool-api.herokuapp.com/api/deezer/album/75621072";
+
+//const urlAlbum ="https://striveschool-api.herokuapp.com/api/deezer/album/75621032";
+//const urlAlbum ="https://striveschool-api.herokuapp.com/api/deezer/search?q=innamorato";
+
+
 
   fetch(urlAlbum)
     .then((res) => {
@@ -94,7 +111,7 @@ const getAlbum = function () {
       }
     })
     .then((data) => {
-      console.log(data);
+      console.log('dati',data);
 
       //-------------Inserisco l'limmagine dell' album--------------
       const generateImage = function () {
@@ -183,21 +200,21 @@ const getAlbum = function () {
         newDivTacks.classList.add("row", "justify-content-between");
         newDivTacks.innerHTML = ` <div class="col col-7">
         <div class="d-flex align-items-center gap-3">
-          <h5 class="text-white">${i}</h5>
+          <h5 class="text-white">${i+1}</h5>
 
           <div>
             <h4 class="text-white">${e.title}</h4>
-            <h6>${e.artist.name}</h6>
+            <h6 class="text-secondary">${e.artist.name}</h6>
           </div>
         </div>
       </div>
 
       <div class="col col-4 d-none d-lg-block">
-        <div>2357657</div>
+        <div class="text-secondary">2357657</div>
       </div>
 
       <div class="col col-1 d-none d-lg-block">
-        <div>${songDuration}</div>
+        <div class="text-secondary">${songDuration}</div>
       </div>
 
       <div class="col col-1 d-lg-none">
@@ -243,6 +260,6 @@ const start = function () {
 
   //metto il background gradient dinamico
   topContainerBackground.style.backgroundImage = `
-    linear-gradient(#${mostRecurrentHex}, rgb(0, 0, 0))  
+    linear-gradient(#${mostRecurrentHex}, rgb(18, 18, 18))  
     `;
 };
