@@ -50,13 +50,14 @@ formReference.addEventListener("submit", function (e) {
       //--------------------rimuovo contenuto search e creo card-----------
         const section = document.getElementById('categorie')
         section.innerHTML = ''
+        searchInput.value = ''
        
       //----------------------------inserisco card artista---------------------
       const artistCol = document.getElementById('artist-col')
      artistCol.innerHTML = `
      <h3 class="text-white mt-5 mb-4">Top Result</h3>   
 
-      <a href="./artist?${artistId}">
+      <a href="./artist2.html?id=${artistId}">
         <div class="card">
           <div class="position-relative">
             <img
@@ -95,11 +96,20 @@ formReference.addEventListener("submit", function (e) {
         newSongDiv.classList.add('d-flex', 'align-items-center', 'gap-1','mb-1')
 
         newSongDiv.innerHTML = `
+
+       
         <img class="w-25" src="${data.data[i].album.cover}" alt="">
            <div>
+           <a href="./album.html?id=${data.data[i].album.id}">
              <h4 class="m-0 text-white">${data.data[i].title}</h4>
+             </a>
+
+             <a href="./artist2.html?id=${artistId}">
              <h5 class="text-secondary">${data.data[i].artist.name}</h5>
+             </a>
            </div>
+       
+        
         
         `
         songCol.appendChild(newSongDiv)

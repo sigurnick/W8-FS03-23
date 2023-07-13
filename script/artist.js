@@ -1,3 +1,13 @@
+function goBack() {
+  window.history.back();
+  console.log("We are in previous page");
+}
+function goForward() {
+  window.history.forward();
+  console.log("We are in next page");
+}
+
+
 // endpoint per il recupero dell' id degli artisti
 const URL = 'https://striveschool-api.herokuapp.com/api/deezer/artist/'
 // recuperiamo il parametro "id" della address bar:
