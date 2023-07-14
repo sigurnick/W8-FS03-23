@@ -69,14 +69,29 @@ fetch(URL + artistId) // + artistId)
   </h1>
     `
     const immagineArtisti = document.getElementById('immagine-artisti')
+  //   immagineArtisti.innerHTML = `
+  //   <img
+  //   class="w-100 bg-album"
+  //   src="${detail.picture_xl}"
+  //   alt="album immagine"
+  // />
+    
+  //   `
+
+
     immagineArtisti.innerHTML = `
-    <img
-    class="w-100 bg-album"
-    src="${detail.picture_xl}"
-    alt="album immagine"
-  />
+    <div class="img-fluid" style="background-image: url('${detail.picture_xl}'); 
+    height: 700px;
+    background-size: cover;
+   
+    background-repeat: no-repeat;
+    "> 
+    </div>
+    
     
     `
+
+
     const urlArtist = detail.tracklist
     console.log('url artist',urlArtist)
 // faccio una seconda fetch per tirare fuori dal secondo endpoint la tracklist

@@ -18,7 +18,7 @@ formReference.addEventListener("submit", function (e) {
     "https://striveschool-api.herokuapp.com/api/deezer/search?q=album:";
   let urlArtist =
     "https://striveschool-api.herokuapp.com/api/deezer/search?q=artist:";
-    let urlArtistId =   "https://striveschool-api.herokuapp.com/api/deezer/artist/";
+    let urlArtistId =  "https://striveschool-api.herokuapp.com/api/deezer/artist/";
 
   e.preventDefault();
   const searchInput = document.getElementById("listen");
@@ -40,7 +40,7 @@ formReference.addEventListener("submit", function (e) {
 
       //-------------------------recupero dati artista-----------
       let artistId = data.data[0].artist.id; 
-      let artistImg = data.data[0].artist.picture_medium
+      let artistImg = data.data[0].artist.picture_xl
       let artistName = data.data[0].artist.name
 
       console.log('id:',artistId);
@@ -50,33 +50,37 @@ formReference.addEventListener("submit", function (e) {
       //--------------------rimuovo contenuto search e creo card-----------
         const section = document.getElementById('categorie')
         section.innerHTML = ''
-        searchInput.value = ''
+        
        
       //----------------------------inserisco card artista---------------------
       const artistCol = document.getElementById('artist-col')
      artistCol.innerHTML = `
      <h3 class="text-white mt-5 mb-4">Top Result</h3>   
 
-      <a href="./artist2.html?id=${artistId}">
+     
         <div class="card">
           <div class="position-relative">
+          <a href="./artist2.html?id=${artistId}">
             <img
               src="${artistImg}"
               class="card-img-top p-4 rounded-circle"
             />
+            </a>
 
             <button class="play-button d-none rounded-circle px-2">
               <i class="bi bi-play-fill text-black fs-1 text-center"></i>
             </button>
           </div>
           <div class="px-4 pb-3">
+          <a href="./artist2.html?id=${artistId}">
             <h5 class="card-title text-white">${artistName}</h5>
+            </a>
             <p class="card-text text-secondary">
               Artist
             </p>
           </div>
         </div>
-      </a>
+     
      
      `
       //------------------------------------------------------------------------
@@ -137,7 +141,9 @@ formReference.addEventListener("submit", function (e) {
 
       //----------------------------altre fetch------------------------
       const albumCol = document.getElementById('album-col')
-      urlArtistId = urlArtistId + artistId
+      
+      const urlArtistId = 'https://striveschool-api.herokuapp.com/api/deezer/search?q=' + searchInput.value
+console.log(urlArtistId);
 
       fetch(urlArtistId)
       .then((res) => {
@@ -148,29 +154,12 @@ formReference.addEventListener("submit", function (e) {
         }
       })
       .then((data) => {
-        console.log("Album", data);
+        console.log("data artist top 50", data);
         let tracklistUrl = data.tracklist
         console.log(tracklistUrl);
 
 
-            //----------fetch tracklist---------
-            fetch(tracklistUrl)
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        } else {
-          throw new Error("Errore nel recupero dell' album");
-        }
-      })
-      .then((data) => {
-
-        console.log('tracklist', data);
-
-
-      })
-      .catch((err)=>{
-        console.log(err);
-    })
+         
 
 
     })

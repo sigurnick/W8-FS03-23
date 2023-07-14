@@ -95,7 +95,7 @@
         <!-- FINE ASIDE SINISTRA -->
 
         <!-- ----------------------Main--------------------- -->
-        <div class="col col-sm-12 col-lg-9 position-relative">
+        <div class="col col-sm-12 col-lg-9 position-relative p-0">
           <main class="">
             <!-- ----------------------------------------Album top section -------------------------------------------------------->
             <div id="top-container-background" class="px-4 py-3">
@@ -209,9 +209,7 @@
                     <i class="bi bi-heart text-white fs-2 me-3"></i>
                   </button>
                   <button>
-                    <i
-                      class="bi bi-cloud-download text-secondary fs-2 me-3"
-                    ></i>
+                    <i class="far fa-arrow-alt-circle-down text-secondary fs-2 me-3"></i>
                   </button>
                   <button>
                     <i
@@ -309,77 +307,11 @@
         </div>
       </div>
     </div>
-    <!-- INIZIO PLAY-BAR -->
-    <div class="container-fluid">
-      <div class="row cols d-none cols d-md-flex bg-play-bar">
-        <div class="col col-2 d-flex">
-          <!-- Qui dentro ci andrebbe inserito dinamicamente l'album -->
-        </div>
-        <div class="col col-8 d-flex align-items-center justify-content-center">
-          <button class="text-success fs-5 me-4">
-            <i class="fas fa-random"></i>
-          </button>
-          <button class="text-white fs-5 me-4">
-            <i class="fas fa-step-backward"></i>
-          </button>
-          <button class="text-white fs-1 me-4">
-            <i class="far fa-play-circle"></i>
-          </button>
-          <button class="text-white fs-5">
-            <i class="fas fa-step-forward"></i>
-          </button>
-          <button class="text-success fs-5 ms-4">
-            <i class="fas fa-retweet"></i>
-          </button>
-        </div>
-        <div class="col col-2 d-flex align-items-center justify-content-evenly">
-          <button class="text-white fs-5">
-            <i class="fas fa-volume-up"></i>
-          </button>
-          <div id="barra-volume" class="d-flex"></div>
-          <button class="text-white ms-2">
-            <i class="fas fa-expand-alt"></i>
-          </button>
-        </div>
-        <div
-          class="col col-12 d-flex justify-content-center align-items-center"
-        >
-          <div class="d-flex">
-            <span class="text-secondary me-3">0:00</span>
-          </div>
-          <div id="barra-avanzamento-brani">
-            <!-- Inserire barra avanzamento brani -->
-            <div id="barra-secondaria"></div>
-          </div>
-          <div class="d-flex">
-            <span class="text-secondary ms-3">3:21</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- FINE PLAY-BAR -->
-    <!-- INIZIO PLAY-BAR MOBILE -->
-    <div class="container-fluid">
-      <div class="row cols d-md-none bg-play-bar-mobile">
-        <div class="col col-12 d-flex justify-content-end">
-          <p><!--qui dentro ci va il titolo della traccia--></p>
-          <button class="text-white ms-3 fs-4">
-            <i class="fas fa-volume-up"></i>
-          </button>
-          <button class="text-white ms-3 fs-4">
-            <i class="far fa-heart"></i>
-          </button>
-          <button class="text-white ms-3 fs-4">
-            <i class="fas fa-play"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- FINE PLAY-BAR MOBILE -->
+
     <!-- INIZIO FOOTER -->
     <footer>
-      <div class="container">
-        <div class="row justify-content-end">
+      <div class="container-fluid">
+        <div class="row justify-content-between">
           <div
             class="col d-none col d-sm-none col-2 d-lg-flex d-flex flex-column mb-3"
           >
@@ -408,7 +340,7 @@
             <p class="text-white mb-1">Consumer rights</p>
           </div>
           <div
-            class="col d-none col d-sm-none col-2 d-lg-flex d-flex justify-content-between mb-3"
+            class="col d-none col d-sm-none col-6 d-lg-flex d-flex justify-content-end mb-3 gap-3"
           >
             <span class="fs-4 text-white"
               ><i class="fab fa-instagram"></i
@@ -436,6 +368,36 @@
       </div>
     </footer>
     <!-- FINE FOOTER -->
+
+            <!-- ------------------------------------------------------------------------------------------------------------------------>
+          </main>
+        </div>
+        <!-- -----------------------------------Fine main---------------------------------------------- -->
+      </div>
+      <div class="row cols d-sm-block cols d-lg-none">
+        <div
+          class="bg-nav-mobile col col-12 d-flex justify-content-evenly align-items-center position-fixed bottom-0"
+        >
+          <a
+            class="text-white d-flex flex-column text-center text-decoration-none fs-3"
+            href="./homepage.html"
+            ><i class="fas fa-home"></i>Home</a
+          >
+          <a
+            class="text-white d-flex flex-column text-center text-decoration-none fs-3"
+            href="./search.html"
+            ><i class="fas fa-search"></i>Search</a
+          >
+          <a
+            class="text-white d-flex flex-column text-center text-decoration-none fs-3"
+            href="#"
+            ><i class="bi bi-collection-play-fill"></i>La tua Libreria</a
+          >
+        </div>
+      </div>
+    </div>
+
+    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

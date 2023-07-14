@@ -120,8 +120,9 @@ main {
     border-radius: 10px;
 }
 .altezza-aside {
-    position: sticky;
+    
     top: 0;
+    left: 0;
     overflow:scroll;
     height: 100vh;
 }
@@ -306,6 +307,8 @@ main {
     }
     .hover-ancor-brani{
         font-size: 1.5em;
+
+      
     }
    
 }
