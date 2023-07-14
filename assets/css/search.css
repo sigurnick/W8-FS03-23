@@ -370,3 +370,14 @@ a:hover{
 
    
 }
+
+
+.altezza-aside {
+    position: fixed;
+    top: 0 !important;
+     overflow:scroll;
+     height: 100vh;
+ }
+ #main-colum{
+     margin-left: 24vh !important;
+ }

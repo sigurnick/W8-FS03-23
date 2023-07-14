@@ -148,10 +148,7 @@ main {
 .hover-aside:hover{
     background-color:#242424;
 }
-#brani-popolari {
-    width: 100%;
-    height: 100vh;
-}
+
 /* .hover-col-brani:hover{
     background-color: #242424;
 } */
@@ -325,3 +322,14 @@ main {
    
 }
 
+
+
+.altezza-aside {
+    position: fixed;
+    top: 0 !important;
+     overflow:scroll;
+     height: 100vh;
+ }
+ #main-colum{
+     margin-left: 24vh !important;
+ }

@@ -48,10 +48,13 @@ a{
     background-color: #121212;
 }
 .altezza-aside {
-    position: sticky;
-    top: 0;
+   position: fixed;
+   top: 0 !important;
     overflow:scroll;
     height: 100vh;
+}
+#main-colum{
+    margin-left: 24vh !important;
 }
 .img-album-song {
     width: 90px;

@@ -107,3 +107,14 @@ a:hover{
     text-decoration: underline !important;
     text-decoration-color: rgb(31, 200, 101) !important;
 }
+
+
+.altezza-aside {
+    position: fixed;
+    top: 0 !important;
+     overflow:scroll;
+     height: 100vh;
+ }
+ #main-colum{
+     margin-left: 24vh !important;
+ }
