@@ -209,7 +209,7 @@ const getAlbum = function () {
 
         newDivTacks = document.createElement("div");
         newDivTacks.classList.add("row", "justify-content-between", "row-song", "align-items-center");
-        newDivTacks.innerHTML = ` <div class="col col-7">
+        newDivTacks.innerHTML = ` <div class="col col-11">
         <div class="d-flex align-items-center gap-3">
           <h5 class="text-white">${i+1}</h5>
 
@@ -223,9 +223,7 @@ const getAlbum = function () {
         </div>
       </div>
 
-      <div class="col col-4 d-none d-lg-block">
-        <div class="text-secondary">2357657</div>
-      </div>
+      
 
       <div class="col col-1 d-none d-lg-block">
         <div class="text-secondary">${songDuration}</div>
