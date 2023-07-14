@@ -3,6 +3,8 @@
 
 body{
      background-color: rgb(18, 18, 18) !important;
+     margin-bottom: 12% !important;
+     height: 100% !important;
 }
 #user-avatar{
     width: 35px;
