@@ -22,7 +22,7 @@ button{
     border-radius: 8px;
     margin-top: 50%;
     position: fixed;
-    bottom: 11%;
+    bottom: 15%;
     z-index: 9999;
 }
 #barra-avanzamento-brani {
