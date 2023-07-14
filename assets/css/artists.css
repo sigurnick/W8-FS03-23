@@ -5,6 +5,12 @@ body{
     height: 100vh;
     
 }
+button{
+    all: unset !important;
+    cursor: pointer !important;
+
+  
+}
 .bg-nav-mobile {
     height: 150px;
     position:fixed;
@@ -210,6 +216,12 @@ main {
 #immagini-artisti {
     background-image: url();
 }
+
+.song-row:hover{
+    background-color: #242424;
+    border-radius: 5px;
+}
+
 
 
 @media screen and (max-width:576px) {

@@ -81,12 +81,18 @@ fetch(URL + artistId) // + artistId)
 
     immagineArtisti.innerHTML = `
     <div class="img-fluid" style="background-image: url('${detail.picture_xl}'); 
-    height: 700px;
+    height: 600px;
     background-size: cover;
-   
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center center;
     "> 
     </div>
+
+    <div class="position-absolute start-0 top-0 d-lg-none ps-3 pt-5">
+                <button onclick="goBack()">
+                  <i class="bi bi-arrow-left text-white fs-1"></i>
+                </button>
+              </div>
     
     
     `
@@ -126,7 +132,7 @@ fetch(urlArtist)
         //mi creo un div dove appendere i brani
         const braniPopolari = document.getElementById('brani-popolari')
         let newDivPopularSong = document.createElement('div')
-        newDivPopularSong.classList.add('d-flex','col','mb-3','justify-content-between','align-items-center') 
+        newDivPopularSong.classList.add('d-flex','col','mb-3','justify-content-between','align-items-center','song-row') 
         newDivPopularSong.innerHTML = `
         <div class="d-flex align-items-center w-100">
                 <span class="text-white fs-4 me-3">${i+1}</span>

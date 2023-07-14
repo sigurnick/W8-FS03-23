@@ -50,6 +50,7 @@ formReference.addEventListener("submit", function (e) {
       //--------------------rimuovo contenuto search e creo card-----------
         const section = document.getElementById('categorie')
         section.innerHTML = ''
+        searchInput.value = ''
         
        
       //----------------------------inserisco card artista---------------------

@@ -21,15 +21,23 @@ button{
 }
 
 #play-button{
-    background-color: rgb(1, 101, 1) !important;
-   
-   
+    background-color: rgb(31, 200, 101)!important; 
+}
+#play-button:hover{
+    scale: 1.1 !important;
+}
+#cover-container:hover{
+    scale: 1.1 !important;
+
 }
 
 
 
 
-
+.song-row:hover{
+    background-color: #242424;
+    border-radius: 5px;
+}
 
 
 

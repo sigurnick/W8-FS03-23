@@ -90,7 +90,37 @@
 
         
 
-        <div class="col col-sm-12 col-lg-9 position-relative">
+        <div class="col col-sm-12 col-lg-9 position-relative p-0">
+
+            <!-- dextop top bar -->
+            <div
+            class="d-none d-lg-block position-fixed w-100 top-0 pt-3 z-3 px-4"
+          >
+            <div class="d-flex justify-content-between">
+              <div class="mb-3">
+                <button id="back" onclick="goBack()">
+                  <i
+                    class="forward-icon fas fa-chevron-circle-left fs-2"
+                  ></i>
+                </button>
+
+                <button id="forward" onclick="goForward()">
+                  <i
+                    class="forward-icon fas fa-chevron-circle-right fs-2"
+                  ></i>
+                </button>
+              </div>
+
+              <div class="pe-5">
+                
+              </div>
+            </div>
+          </div>
+
+        
+
+          
+          
 
           <!-- INIZO HEADER - IMMAGINE ALBUM ARTISTI -->
         <div id="spinner-box" class="justify-content-center">
@@ -108,15 +138,11 @@
                 src="assets/imgs/main/Pinguini-tattici-nucleari.jpg.webp"
                 alt=""
               /> -->
+
+              
             </div>
 
-            <!-- icon arrow -->
-            <a class="position-absolute text-white back" href=""
-              ><i class="back-icon fas fa-chevron-circle-left"></i
-            ></a>
-            <a class="position-absolute text-white forward" href=""
-              ><i class="forward-icon fas fa-chevron-circle-right"></i
-            ></a>
+          
             <img
               class="position-absolute check-album"
               src="653-6533429_verified-artist-spotify-clipart-social-media-verified.png.jpeg"
@@ -149,7 +175,7 @@
           <h3 class="text-white mt-3 mb-5">Popolari</h3>
           <div class="row flex-column">
             <div
-              class="hover-col-brani col col-12 d-flex align-items-baseline justify-content-between gy-2"
+              class="hover-col-brani col col-12 d-flex align-items-baseline justify-content-between gy-2 px-4"
             >
               <div id="brani-popolari">
                 <!-- <div class="d-flex align-items-center">
