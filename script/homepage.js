@@ -61,19 +61,19 @@ const getRockRow = function () {
         rockRow.appendChild(newDiv);
       }
 
-       //--------------diaply play button on mouseover--------------
-       const allPlayButton = document.querySelectorAll(".play-button");
-       const allCards = document.querySelectorAll(".card");
-       allCards.forEach((e, i) => {
-         e.addEventListener("mouseover", function () {
-           allPlayButton[i].classList.remove("d-none");
-         });
- 
-         e.addEventListener("mouseout", function () {
-           allPlayButton[i].classList.add("d-none");
-         });
-       });
-       //------------------------------------------------------------
+      //--------------diaply play button on mouseover--------------
+      const allPlayButton = document.querySelectorAll(".play-button");
+      const allCards = document.querySelectorAll(".card");
+      allCards.forEach((e, i) => {
+        e.addEventListener("mouseover", function () {
+          allPlayButton[i].classList.remove("d-none");
+        });
+
+        e.addEventListener("mouseout", function () {
+          allPlayButton[i].classList.add("d-none");
+        });
+      });
+      //------------------------------------------------------------
       //---------------------------------------------------------------------
     })
     .catch((err) => {
@@ -157,9 +157,9 @@ const getpopRow = function () {
 };
 //----------------------------------------------------------------------------------------------------
 
-
 //------------------------------------------------indie section----------------------------------------------------
-const indieUrl = "https://striveschool-api.herokuapp.com/api/deezer/search?q=indie";
+const indieUrl =
+  "https://striveschool-api.herokuapp.com/api/deezer/search?q=indie";
 
 const getindieRow = function () {
   fetch(indieUrl)
@@ -233,14 +233,6 @@ const getindieRow = function () {
 };
 //----------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
 getRockRow();
 getpopRow();
-getindieRow()
+getindieRow();

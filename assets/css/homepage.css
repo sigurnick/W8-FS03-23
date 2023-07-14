@@ -1,119 +1,104 @@
-body{
-    background-color: #121212 !important;
-    margin-bottom: 12%;
+body {
+  background-color: #121212 !important;
+  margin-bottom: 12%;
 }
 
-button{
-    all: unset !important;
-    cursor: pointer !important;
+button {
+  all: unset !important;
+  cursor: pointer !important;
 }
-#user-avatar{
-    width: 35px;
-}
-
-.card{
-    background-color: rgb(24, 24, 24) !important;
-
-}
-.card:hover{
-    background-color: rgb(40,40,40) !important;
+#user-avatar {
+  width: 35px;
 }
 
-a{
-    text-decoration: none !important;
+.card {
+  background-color: rgb(24, 24, 24) !important;
+}
+.card:hover {
+  background-color: rgb(40, 40, 40) !important;
 }
 
-.play-button{
-    box-shadow: 3px 3px 35px 3px #000000 !important;
-    background-color: rgb(31, 200, 101) !important;
-    position: absolute !important;
-    bottom: 35px !important;
-    right: 35px !important;
-}
-.play-button:hover{
-    scale: 1.1 !important;
-    background-color: rgb(101,212,110) !important;
-
+a {
+  text-decoration: none !important;
 }
 
-
-
-
+.play-button {
+  box-shadow: 3px 3px 35px 3px #000000 !important;
+  background-color: rgb(31, 200, 101) !important;
+  position: absolute !important;
+  bottom: 35px !important;
+  right: 35px !important;
+}
+.play-button:hover {
+  scale: 1.1 !important;
+  background-color: rgb(101, 212, 110) !important;
+}
 
 /* -------nav aside------ */
-.position-aside{
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-    background-color: #121212;
+.position-aside {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #121212;
 }
 .altezza-aside {
-    position: sticky;
-    top: 0;
-    overflow:scroll;
-    height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow: scroll;
+  height: 100vh;
 }
 .img-album-song {
-    width: 90px;
+  width: 90px;
 }
 .img-album-song-aside {
-    width: 50px;
-    border-radius: 10px;
+  width: 50px;
+  border-radius: 10px;
 }
-.hover-aside{
-    padding: 10px;
-    border-radius: 100px;
+.hover-aside {
+  padding: 10px;
+  border-radius: 100px;
 }
-.hover-aside:hover{
-    background-color:#242424;
+.hover-aside:hover {
+  background-color: #242424;
 }
-.hover-col-brani:hover{
-    background-color: #242424;
+.hover-col-brani:hover {
+  background-color: #242424;
 }
-.hover-ancor-brani{
-    color: white;
+.hover-ancor-brani {
+  color: white;
 }
-.hover-ancor-brani:hover{
-    color: #2dce67;
+.hover-ancor-brani:hover {
+  color: #2dce67;
 }
 .ancore-aside {
-    background-color: #242424;
-    border-radius: 100px;
-    width: 90px;
-    text-align: center;
+  background-color: #242424;
+  border-radius: 100px;
+  width: 90px;
+  text-align: center;
 }
 .ancore-aside:hover {
-    background-color: #6b706a;
+  background-color: #6b706a;
 }
 
 /* nav mobile */
 .bg-nav-mobile {
-    
-    width: 100vh;
-    height: 150px;
-    position:fixed;
-    bottom: 0;
-    background-color: #121212;
-    z-index: 9999;
-    background-color: RGBA(0,0,0,0.8);
-    
+  width: 100vh;
+  height: 150px;
+  position: fixed;
+  bottom: 0;
+  background-color: #121212;
+  z-index: 9999;
+  background-color: RGBA(0, 0, 0, 0.8);
 }
 
-#nav-mobile{
-    margin-top: 200px !important;
+#nav-mobile {
+  margin-top: 200px !important;
 }
 
-
-
-a{
-    text-decoration: none !important;
+a {
+  text-decoration: none !important;
 }
-a:hover{
-    text-decoration: underline !important;
-    text-decoration-color: rgb(31, 200, 101) !important;
-
-   
+a:hover {
+  text-decoration: underline !important;
+  text-decoration-color: rgb(31, 200, 101) !important;
 }
-
-
-
