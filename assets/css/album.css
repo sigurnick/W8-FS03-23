@@ -28,12 +28,15 @@ button{
 }
 
 #play-button{
-    background-color: rgb(1, 101, 1) !important;
-   
-   
+    background-color: rgb(31, 200, 101)  !important;  
+}
+#play-button:hover{
+    scale: 1.1 !important;
 }
 
-
+#heart-green{
+    color: rgb(31, 200, 101)  !important;  
+}
 
 
 

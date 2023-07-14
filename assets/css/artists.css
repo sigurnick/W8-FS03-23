@@ -277,7 +277,7 @@ main {
 @media screen and (min-width: 768px) {
     .title-album{
         font-size: 2em;
-        top: 70%;
+        top: 65%;
     }
     .check-album{
         top: 60%;
@@ -294,13 +294,13 @@ main {
 @media screen and (min-width: 992px) {
     .title-album{
         font-size: 2em;
-        top: 80%;
+        top: 65%;
     }
     .check-album{
-        top: 76%;
+        top: 60%;
     }
     .check-album-text{
-        top: 75.4%;
+        top: 60%;
         left: 8%;
     }
     .back{

@@ -1,11 +1,10 @@
-
 function goBack() {
-	window.history.back();
-	console.log('We are in previous page');
+  window.history.back();
+  console.log("We are in previous page");
 }
 function goForward() {
-	window.history.forward();
-	console.log('We are in next page');
+  window.history.forward();
+  console.log("We are in next page");
 }
 
 //----------------------------------funzione per prendere il colore medio di un immagine-----------------------------------------
@@ -70,23 +69,18 @@ const pad = function (hex) {
 
 //-------------------------------------------------------------------------------------------------------------------------------
 
-
-
 //-------------------funzione che converte secondi in minuti--------------------------------------------
 const convertSecondsInMinutes = function (seconds) {
-    let minutes = Math.floor(seconds / 60);
-    let extraSeconds = seconds % 60;
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    extraSeconds = extraSeconds < 10 ? "0" + extraSeconds : extraSeconds;
+  let minutes = Math.floor(seconds / 60);
+  let extraSeconds = seconds % 60;
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  extraSeconds = extraSeconds < 10 ? "0" + extraSeconds : extraSeconds;
 
-    extraSeconds = extraSeconds.toString();
-    minutes = minutes.slice(1, 2);
-    return minutes + ":" + extraSeconds;
-  };
-  //------------------------------------------------------------------------------------------------------
-
-
-
+  extraSeconds = extraSeconds.toString();
+  minutes = minutes.slice(1, 2);
+  return minutes + ":" + extraSeconds;
+};
+//------------------------------------------------------------------------------------------------------
 
 // let params = new URLSearchParams(location.search);
 
@@ -94,13 +88,11 @@ const convertSecondsInMinutes = function (seconds) {
 const addressBarContent = new URLSearchParams(location.search);
 const albumId = addressBarContent.get("id");
 console.log(albumId);
-const urlAlbum = 'https://striveschool-api.herokuapp.com/api/deezer/album/' + albumId
+const urlAlbum =
+  "https://striveschool-api.herokuapp.com/api/deezer/album/" + albumId;
 const getAlbum = function () {
-
-//const urlAlbum ="https://striveschool-api.herokuapp.com/api/deezer/album/75621032";
-//const urlAlbum ="https://striveschool-api.herokuapp.com/api/deezer/search?q=innamorato";
-
-
+  //const urlAlbum ="https://striveschool-api.herokuapp.com/api/deezer/album/75621032";
+  //const urlAlbum ="https://striveschool-api.herokuapp.com/api/deezer/search?q=innamorato";
 
   fetch(urlAlbum)
     .then((res) => {
@@ -111,7 +103,7 @@ const getAlbum = function () {
       }
     })
     .then((data) => {
-      console.log('dati',data);
+      console.log("dati", data);
 
       //-------------Inserisco l'limmagine dell' album--------------
       const generateImage = function () {
@@ -121,7 +113,7 @@ const getAlbum = function () {
 
         const topContainer = document.getElementById("top-container");
         const coverContainer = document.getElementById("cover-container");
-    
+
         // let newDivCover = document.createElement("div");
         // newDivCover.classList.add("d-flex", "justify-content-center","coverContainer");
 
@@ -133,9 +125,6 @@ const getAlbum = function () {
            crossorigin="anonymous"
            onload="start()"
          />`;
-        
-
-        
       };
       generateImage();
 
@@ -171,7 +160,7 @@ const getAlbum = function () {
      </a>
 
       
-      `
+      `;
 
       albumName.innerText = data.title; //nome album
       albumYear.innerHTML = `&middot; ${data.release_date.slice(
@@ -200,18 +189,21 @@ const getAlbum = function () {
       albumDurations.innerText = duration + " min " + durationSecond + " sec.";
       //--------------------------------------------------------------------------
 
-      
-
       //----------------------Inserisco canzoni-----------------
       const tracksContainer = document.getElementById("tacks-container");
       tracks.forEach((e, i) => {
         const songDuration = convertSecondsInMinutes(e.duration); //prende la durata delle canzoni
 
         newDivTacks = document.createElement("div");
-        newDivTacks.classList.add("row", "justify-content-between", "row-song", "align-items-center");
+        newDivTacks.classList.add(
+          "row",
+          "justify-content-between",
+          "row-song",
+          "align-items-center"
+        );
         newDivTacks.innerHTML = ` <div class="col col-11">
         <div class="d-flex align-items-center gap-3">
-          <h5 class="text-white">${i+1}</h5>
+          <h5 class="text-white">${i + 1}</h5>
 
           <div class="p-1">
             <h4 class="text-white mb-1">${e.title}</h4>
@@ -237,6 +229,91 @@ const getAlbum = function () {
 
         tracksContainer.appendChild(newDivTacks);
       });
+
+      //---------------------------------Save Album-------------------------
+      const albumToSave = data.id; //id album
+      const albumInStorage = localStorage.getItem("album"); //contenuto local
+     
+      console.log("Album presenti in local:", albumInStorage);
+
+      if (albumInStorage) {
+        
+        const albumArr = JSON.parse(albumInStorage); //array
+        //---------------controllo se l'album è già salvato----
+        albumArr.forEach((e) => {
+          if (e === albumToSave) {
+            console.log(e);
+            const heartGreen = document.getElementById("heart-green");
+            const heartWhite = document.getElementById("heart-white");
+            heartWhite.classList.add("d-none");
+            heartGreen.classList.remove("d-none");
+          }
+        });
+      }
+      //------------------------------------------------------------
+
+      //-------------------------Click su bottone heart----------------
+      const heartButton = document.getElementById("heart-button");
+
+      heartButton.addEventListener("click", function () {
+        if (albumInStorage) {
+          //local storage con già del contenuto
+          console.log('localstorage ha contenuto');
+
+          const albumArr = JSON.parse(albumInStorage); //array
+
+          //---------------controllo se l'album è già salvato----
+          albumArr.forEach((e) => {
+            if (e === albumToSave) {
+              console.log(e);
+              const heartGreen = document.getElementById("heart-green");
+              const heartWhite = document.getElementById("heart-white");
+              heartWhite.classList.add("d-none");
+              heartGreen.classList.remove("d-none");
+            }
+          });
+
+          let albumToRemoveIndex;
+
+          albumArr.forEach((e, i) => {
+            if (e === albumToSave) {
+              //album gia presente quindi voglio rimuoverlo
+
+              //tolgo il cuore verde
+              const heartGreen = document.getElementById("heart-green");
+              const heartWhite = document.getElementById("heart-white");
+              heartWhite.classList.remove("d-none");
+              heartGreen.classList.add("d-none");
+
+              albumToRemoveIndex = i; //indice elemento da rimuovere
+              console.log("idice elemento da rimuovere", albumToRemoveIndex);
+            } else {
+              //aggiungo contenuto
+              albumArr.push(albumToSave);
+
+              const heartGreen = document.getElementById("heart-green");
+              const heartWhite = document.getElementById("heart-white");
+              heartWhite.classList.remove("d-none");
+              heartGreen.classList.add("d-none");
+            }
+          });
+
+          //rimuove l'album dal local se presente
+          if (albumToRemoveIndex >= 0) {
+            console.log("Voglio rimuovere elemento");
+            albumArr.splice(albumToRemoveIndex, 1);
+          }
+
+          localStorage.setItem("album", JSON.stringify(albumArr)); //aggiungo a local
+          
+        } else {
+          console.log("siamo qui local vuoto");
+          const albumArr = [];
+          albumArr.push(albumToSave);
+          localStorage.setItem("album", JSON.stringify(albumArr));
+        }
+      });
+
       //--------------------------------------------------------------------
     })
     .catch((err) => {

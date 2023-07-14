@@ -80,17 +80,103 @@
             </p>
           </div>
 
-          <div class="d-flex align-items-end">
+          <div class="d-flex align-items-center">
             <img
               class="img-album-song-aside mt-3"
-              src="assets/imgs/main/image-12.jpg"
+              src="./assets/imgs/search/image-11.jpg"
               alt=""
             />
             <p class="text-white mb-0 ms-3">
-              song that feel like the i swear i was infinite ... Playlist -
-              Milla Ellis Wood
+              Song to sing in the car - Playlist
             </p>
           </div>
+
+          <div class="d-flex align-items-center">
+            <img
+              class="img-album-song-aside mt-3"
+              src="./assets/imgs/search/image-12.jpg"
+              alt=""
+            />
+            <p class="text-white mb-0 ms-3">
+              All out - Playlist
+            </p>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <img
+              class="img-album-song-aside mt-3"
+              src="./assets/imgs/search/image-16.jpg"
+              alt=""
+            />
+            <p class="text-white mb-0 ms-3">
+              Soul lunge - Playlist
+            </p>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <img
+              class="img-album-song-aside mt-3"
+              src="./assets/imgs/search/image-17.jpg"
+              alt=""
+            />
+            <p class="text-white mb-0 ms-3">
+              Stress Relief - Playlist
+            </p>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <img
+              class="img-album-song-aside mt-3"
+              src="https://shop.universalmusic.it/cdn/shop/products/03_7_1024x1024.jpg?v=1675103345"
+              alt=""
+            />
+            <p class="text-white mb-0 ms-3">
+              CENERE - Lazza
+            </p>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <img
+              class="img-album-song-aside mt-3"
+              src="https://www.ibs.it/images/8057715903821_0_536_0_75.jpg"
+              alt=""
+            />
+            <p class="text-white mb-0 ms-3">
+              OK UN CAZZO - Gazzelle
+            </p>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <img
+              class="img-album-song-aside mt-3"
+              src="https://cdns-images.dzcdn.net/images/cover/c2725506f8d87349e5889b33cae4f3a9/264x264.jpg"
+              alt=""
+            />
+            <p class="text-white mb-0 ms-3">
+              Solo in due - YOUNGGUCCI
+            </p>
+          </div>
+
+          <p class="text-white mt-3">early stage emily syndrome (sett-ott 2022)</p>
+      <p class="text-white ">Be the Young</p>
+      <p class="text-white ">"..." cit. Kimiko (lug-ago 2022)</p>
+      <p class="text-white ">saggio vibes 💃🩰</p>
+      <p class="text-white ">main character energy (mag-giu 2022)</p>
+      <p class="text-white ">that fucking mood 🔪☠️</p>
+      <p class="text-white ">VEE, CARLOTTA E GIACOMO VANNO A BOSIO</p>
+      <p class="text-white ">An Emily Winchester kind of mood 🔪🖕</p>
+      <p class="text-white ">landing page (mar-apr 2022)</p>
+      <p class="text-white ">2021 lol</p>
+      <p class="text-white ">cosa cazzo vuol dire questa affermazione (gen-fe...</p>
+      <p class="text-white ">honey and glass (nov-dic 2021)</p>
+      <p class="text-white ">(Revenge) Training Arc 🦍</p>
+      <p class="text-white ">minecraft e nintendo switch (sep-oct 2021)</p>
+      <p class="text-white ">silvano d'orba? I hardly know her (lug-ago 2021)</p>
+      <p class="text-white ">Culo 2021</p>
+      <p class="text-white ">Frah Quintale Mix</p>
+      <p class="text-white ">Francesco Guccini Mix</p>
+      <p class="text-white ">Matteo Renzi fa ridere</p>
+
         </div>
         <!-- FINE ASIDE SINISTRA -->
 
@@ -205,8 +291,9 @@
               >
                 <!-- love-download-options -->
                 <div>
-                  <button type="button">
-                    <i class="bi bi-heart text-white fs-2 me-3"></i>
+                  <button id="heart-button" type="button">
+                    <i id="heart-white" class="bi bi-heart text-white fs-2 me-3"></i>
+                    <i id="heart-green" class="bi bi-heart-fill fs-2 me-3 d-none"></i>
                   </button>
                   <button>
                     <i class="far fa-arrow-alt-circle-down text-secondary fs-2 me-3"></i>
@@ -381,7 +468,7 @@
           <button class="text-white fs-5 me-4">
             <i class="fas fa-step-backward"></i>
           </button>
-          <button class="text-white fs-1 me-4">
+          <button id="play-song" class="text-white fs-1 me-4">
             <i class="far fa-play-circle"></i>
           </button>
           <button class="text-white fs-5">

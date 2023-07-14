@@ -153,16 +153,16 @@ fetch(urlArtist)
         const aside = document.getElementById('title-album-artist')
           let newSongDiv = document.createElement('div')
           newSongDiv.classList.add("d-flex", "align-items-end")
-          newSongDiv.innerHTML = `
-          <div id="libreria-aside" class="d-flex align-items-end">
-            <img
-              class="img-album-song-aside mt-3"
-              src="${data.data[i].album.cover}"
-              alt=""
-            />
-            <a class="text-white mb-0 ms-3 text-decoration-none" href=""> ${data.data[i].title}</a>
-          </div>
-           `
+          // newSongDiv.innerHTML = `
+          // <div id="libreria-aside" class="d-flex align-items-end">
+          //   <img
+          //     class="img-album-song-aside mt-3"
+          //     src="${data.data[i].album.cover}"
+          //     alt=""
+          //   />
+          //   <a class="text-white mb-0 ms-3 text-decoration-none" href=""> ${data.data[i].title}</a>
+          // </div>
+          //  `
           aside.appendChild(newSongDiv)
 
       }
