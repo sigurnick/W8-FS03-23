@@ -99,3 +99,8 @@ a:hover{
     text-decoration: underline !important;
     text-decoration-color: rgb(31, 200, 101) !important;
 }
+
+.row-song:hover{
+    background-color: #242424 !important;
+    border-radius: 5px !important;
+}

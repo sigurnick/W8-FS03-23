@@ -208,14 +208,17 @@ const getAlbum = function () {
         const songDuration = convertSecondsInMinutes(e.duration); //prende la durata delle canzoni
 
         newDivTacks = document.createElement("div");
-        newDivTacks.classList.add("row", "justify-content-between");
+        newDivTacks.classList.add("row", "justify-content-between", "row-song", "align-items-center");
         newDivTacks.innerHTML = ` <div class="col col-7">
         <div class="d-flex align-items-center gap-3">
           <h5 class="text-white">${i+1}</h5>
 
-          <div>
-            <h4 class="text-white">${e.title}</h4>
+          <div class="p-1">
+            <h4 class="text-white mb-1">${e.title}</h4>
+            <a href="./artist2.html?id=${data.artist.id}">
             <h6 class="text-secondary">${e.artist.name}</h6>
+            </a>
+
           </div>
         </div>
       </div>

@@ -126,8 +126,9 @@ fetch(urlArtist)
         //mi creo un div dove appendere i brani
         const braniPopolari = document.getElementById('brani-popolari')
         let newDivPopularSong = document.createElement('div')
-        newDivPopularSong.classList.add('d-flex','col','mb-3','justify-content-between','align-items-center') 
+        newDivPopularSong.classList.add('d-flex','col','mb-3','justify-content-between','align-items-center','row-song') 
         newDivPopularSong.innerHTML = `
+        
         <div class="d-flex align-items-center w-100">
                 <span class="text-white fs-4 me-3">${i+1}</span>
                 <img
