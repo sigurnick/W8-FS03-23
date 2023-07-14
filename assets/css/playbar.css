@@ -1,4 +1,50 @@
+
 button{
     all: unset !important;
     cursor: pointer !important;
 }
+.bg-play-bar {
+    background-color: RGBA(0,0,0,1);
+    height: 150px;
+    position: fixed;
+    bottom: 15%;
+    width: 100%;
+    z-index: 9999;
+}
+.bg-play-bar-mobile {
+    background-color: #282828;
+    height: 80px;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 50%;
+    position: fixed;
+    bottom: 15%;
+    z-index: 9999;
+}
+#barra-avanzamento-brani {
+    width: 400px;
+    background-color: grey;
+    height: 5px;
+    border-radius: 100px;
+}
+/* #barra-secondaria {
+    width: 100px;
+    background-color: white;
+    height: 5px;
+    border-radius: 100px;
+} */
+#barra-volume {
+    width: 150px;
+    background-color: white;
+    height: 4px;
+    border-radius: 100px;
+}
+ @media screen and (min-width:768px) {
+    
+} 
+ @media screen and (min-width:992px) {
+    .bg-play-bar{
+        bottom: 0; 
+    }
+    
+} 

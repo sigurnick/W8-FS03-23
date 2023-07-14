@@ -2,7 +2,7 @@ body{
     height:100%;
     background-color:#121212;
     font-family: 'Cabin', sans-serif;
-    
+    margin-bottom: 12%;
 }
 #spotSong{
     color: rgb(156, 155, 155);
@@ -10,8 +10,6 @@ body{
     margin-left: 30px;
     font-size: 20px;
     text-decoration: none;
-    
-    
 }
 
 #spoty{
@@ -35,7 +33,6 @@ body{
     border-radius: 10px 10px 10px 10px;
     box-shadow: 20px 20px 50px 20px;
     transform: rotate(30deg);
-    
  }
 
 #card2{
@@ -52,8 +49,7 @@ body{
     bottom: -3px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 20px 20px 50px 20px;
-    transform: rotate(30deg);
-    
+    transform: rotate(30deg);  
  }
 #card3{
     background-color: rgb(255, 0, 106) !important;
@@ -70,7 +66,6 @@ body{
     border-radius: 10px 10px 10px 10px;
     box-shadow: 20px 20px 50px 20px;
     transform: rotate(30deg);
-    
  }
 #card4{
     background-color: green !important;
@@ -104,7 +99,6 @@ body{
     border-radius: 10px 10px 10px 10px;
     box-shadow: 20px 20px 50px 20px;
     transform: rotate(30deg);
-    
  }
 #card6{
     background-color: rgb(202, 82, 38) !important;
@@ -121,7 +115,6 @@ body{
     border-radius: 10px 10px 10px 10px;
     box-shadow: 20px 20px 50px 20px;
     transform: rotate(30deg);
-    
  }
 #card7{
     background-color: fuchsia !important;
@@ -138,7 +131,6 @@ body{
     border-radius: 10px 10px 10px 10px;
     box-shadow: 20px 20px 50px 20px;
     transform: rotate(30deg);
-    
  }
 #card8{
     background-color: violet !important;
@@ -155,7 +147,6 @@ body{
     border-radius: 10px 10px 10px 10px;
     box-shadow: 20px 20px 50px 20px;
     transform: rotate(30deg);
-    
  }
 #boxPlay{
     display: flex;
@@ -163,7 +154,6 @@ body{
     align-items: center;
     padding-top: 50px;
     padding-right: 20px;
-    
     margin-top: 10px;
     width: 100%;
     height: 60px;
@@ -174,7 +164,6 @@ body{
     height: 100px;
     display: flex;
     justify-content: space-between;
-    
     font-size: 30px;
 }
 #heart1{
@@ -192,7 +181,6 @@ body{
 #play1:hover,
 #heart1:hover{
   font-size: 32px;
-
 }
 
 #homeButton, 
