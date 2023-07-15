@@ -1,111 +1,90 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-  body{
-    font-family: 'Inter', sans-serif;
-  }
-
-
-
-body{
-     background-color: rgb(18, 18, 18) !important;
-     margin-bottom: 12% !important;
-     height: 100% !important;
-}
-#user-avatar{
-    width: 35px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
 }
 
-
-#artist-img{
-    width: 40px;
+body {
+  background-color: rgb(18, 18, 18) !important;
+  margin-bottom: 12% !important;
+  height: 100% !important;
+}
+#user-avatar {
+  width: 35px;
 }
 
-button{
-    all: unset !important;
-    cursor: pointer !important;
-
-  
+#artist-img {
+  width: 40px;
 }
 
-#play-button{
-    background-color: rgb(1, 101, 1) !important;
-   
-   
+button {
+  all: unset !important;
+  cursor: pointer !important;
 }
 
-
-
-
-
-
-
-
+#play-button {
+  background-color: rgb(1, 101, 1) !important;
+}
 
 /* -------nav aside------ */
-.position-aside{
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-    background-color: #121212;
+.position-aside {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #121212;
 }
 .altezza-aside {
-    position: sticky;
-    top: 0;
-    overflow:scroll;
-    height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow: scroll;
+  height: 100vh;
 }
 .img-album-song {
-    width: 90px;
+  width: 90px;
 }
 .img-album-song-aside {
-    width: 50px;
-    border-radius: 10px;
+  width: 50px;
+  border-radius: 10px;
 }
-.hover-aside{
-    padding: 10px;
-    border-radius: 100px;
+.hover-aside {
+  padding: 10px;
+  border-radius: 100px;
 }
-.hover-aside:hover{
-    background-color:#242424;
+.hover-aside:hover {
+  background-color: #242424;
 }
-.hover-col-brani:hover{
-    background-color: #242424;
+.hover-col-brani:hover {
+  background-color: #242424;
 }
-.hover-ancor-brani{
-    color: white;
+.hover-ancor-brani {
+  color: white;
 }
-.hover-ancor-brani:hover{
-    color: #2dce67;
+.hover-ancor-brani:hover {
+  color: #2dce67;
 }
 .ancore-aside:hover {
-    background-color: #6b706a;
+  background-color: #6b706a;
 }
-
-
 
 /* nav mobile */
 .bg-nav-mobile {
-    
-    width: 100vh;
-    height: 150px;
-    position:fixed;
-    bottom: 0;
-    background-color: #121212;
-    z-index: 9999;
-    background-color: RGBA(0,0,0,0.8);
-    
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  bottom: 0;
+  background-color: #121212;
+  z-index: 9999;
+  background-color: RGBA(0, 0, 0, 0.8);
 }
 
-
-a{
-    text-decoration: none !important;
+a {
+  text-decoration: none !important;
 }
-a:hover{
-    text-decoration: underline !important;
-    text-decoration-color: rgb(31, 200, 101) !important;
+a:hover {
+  text-decoration: underline !important;
+  text-decoration-color: rgb(31, 200, 101) !important;
 }
 
-.row-song:hover{
-    background-color: #242424 !important;
-    border-radius: 5px !important;
+.row-song:hover {
+  background-color: #242424 !important;
+  border-radius: 5px !important;
 }

@@ -1,35 +1,35 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-body{
-  font-family: 'Inter', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
 }
-button{
-    all: unset !important;
-    cursor: pointer !important;
+button {
+  all: unset !important;
+  cursor: pointer !important;
 }
 .bg-play-bar {
-    background-color: RGBA(0,0,0,1);
-    height: 150px;
-    position: fixed;
-    bottom: 15%;
-    width: 100%;
-    z-index: 9999;
+  background-color: RGBA(0, 0, 0, 1);
+  height: 150px;
+  position: fixed;
+  bottom: 15%;
+  width: 100%;
+  z-index: 9999;
 }
+
 .bg-play-bar-mobile {
-    background-color: #282828;
-    height: 80px;
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 50%;
-    position: fixed;
-    bottom: 11%;
-    z-index: 9999;
+  background-color: #282828;
+  height: 80px;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 50%;
+  position: fixed;
+  bottom: 11%;
+  z-index: 9999;
 }
 #barra-avanzamento-brani {
-    width: 400px;
-    background-color: grey;
-    height: 5px;
-    border-radius: 100px;
+  width: 400px;
+  background-color: grey;
+  height: 5px;
+  border-radius: 100px;
 }
 /* #barra-secondaria {
     width: 100px;
@@ -38,17 +38,15 @@ button{
     border-radius: 100px;
 } */
 #barra-volume {
-    width: 150px;
-    background-color: white;
-    height: 4px;
-    border-radius: 100px;
+  width: 150px;
+  background-color: white;
+  height: 4px;
+  border-radius: 100px;
 }
- @media screen and (min-width:768px) {
-    
-} 
- @media screen and (min-width:992px) {
-    .bg-play-bar{
-        bottom: 0; 
-    }
-    
-} 
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+  .bg-play-bar {
+    bottom: 0;
+  }
+}

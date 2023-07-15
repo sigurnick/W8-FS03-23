@@ -33,7 +33,7 @@
         <div
           class="altezza-aside col d-none col d-lg-flex col-md-3 d-flex flex-column"
         >
-          <div class=" d-flex flex-column">
+          <div class="d-flex flex-column">
             <a
               class="hover-aside text-decoration-none text-white fs-5 mb-3 mt-3"
               href="./homepage.html"
@@ -84,49 +84,34 @@
         </div>
         <!-- FINE ASIDE SINISTRA -->
 
-
         <!-- ------------------colonna centrale----------------- -->
 
-        
-
-        
-
         <div class="col col-sm-12 col-lg-9 position-relative p-0">
+          <!-- dextop top bar -->
+          <div class="d-none d-lg-block position-fixed w-100 top-0 pt-3 z-3">
+            <div class="d-flex justify-content-between">
+              <div class="mb-3 ps-4">
+                <button id="back" onclick="goBack()">
+                  <i class="forward-icon fas fa-chevron-circle-left fs-2"></i>
+                </button>
 
- <!-- dextop top bar -->
- <div
- class="d-none d-lg-block position-fixed w-100 top-0 pt-3 z-3"
->
- <div class="d-flex justify-content-between">
-   <div class="mb-3 ps-4">
-     <button id="back" onclick="goBack()">
-       <i
-         class="forward-icon fas fa-chevron-circle-left fs-2"
-       ></i>
-     </button>
+                <button id="forward" onclick="goForward()">
+                  <i class="forward-icon fas fa-chevron-circle-right fs-2"></i>
+                </button>
+              </div>
 
-     <button id="forward" onclick="goForward()">
-       <i
-         class="forward-icon fas fa-chevron-circle-right fs-2"
-       ></i>
-     </button>
-   </div>
-
-   <div class="pe-5">
-     
-   </div>
- </div>
-</div>
-
-
-          <!-- INIZO HEADER - IMMAGINE ALBUM ARTISTI -->
-        <div id="spinner-box" class="justify-content-center">
-          <div class="d-flex justify-content-center">
-            <div class="spinner-border text-success" role="status">
-              <span class="visually-hidden">Loading...</span>
+              <div class="pe-5"></div>
             </div>
           </div>
-        </div>
+
+          <!-- INIZO HEADER - IMMAGINE ALBUM ARTISTI -->
+          <div id="spinner-box" class="justify-content-center">
+            <div class="d-flex justify-content-center">
+              <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
 
           <div class="position-relative">
             <div id="immagine-artisti">
@@ -138,7 +123,7 @@
             </div>
 
             <!-- icon arrow -->
-            
+
             <img
               class="position-absolute check-album"
               src="653-6533429_verified-artist-spotify-clipart-social-media-verified.png.jpeg"
@@ -196,73 +181,71 @@
 
           <!-- FINE CONTENUTO BRANI -->
 
-<!-- INIZIO FOOTER -->
-<footer>
-  <div class="container-fluid">
-    <div class="row justify-content-between">
-      <div
-        class="col d-none col d-sm-none col-2 d-lg-flex d-flex flex-column mb-3"
-      >
-        <h3 class="h3-footer text-white">Company</h3>
-        <p class="text-white mb-1">About</p>
-        <p class="text-white mb-1">Jobs</p>
-        <p class="text-white mb-1">For the Record</p>
-      </div>
-      <div
-        class="col d-none col d-sm-none col-2 d-lg-flex d-flex flex-column mb-3"
-      >
-        <h3 class="h3-footer text-white">Communities</h3>
-        <p class="text-white mb-1">For Artists</p>
-        <p class="text-white mb-1">Developers</p>
-        <p class="text-white mb-1">Advertising</p>
-        <p class="text-white mb-1">Investors</p>
-        <p class="text-white mb-1">Vendors</p>
-        <p class="text-white mb-1">Spotify for Work</p>
-      </div>
-      <div
-        class="col d-none col d-sm-none col-2 d-lg-flex d-flex flex-column mb-3"
-      >
-        <h3 class="h3-footer text-white mb-1">Useful links</h3>
-        <p class="text-white mb-1">Support</p>
-        <p class="text-white mb-1">Free Mobile App</p>
-        <p class="text-white mb-1">Consumer rights</p>
-      </div>
-      <div
-        class="col d-none col d-sm-none col-6 d-lg-flex d-flex justify-content-end mb-3 gap-3"
-      >
-        <span class="fs-4 text-white"
-          ><i class="fab fa-instagram"></i
-        ></span>
-        <span class="fs-4 text-white"> <i class="fab fa-twitter"></i></span>
-        <span class="fs-4 text-white"><i class="fab fa-facebook"></i></span>
-      </div>
-      <hr id="hr-footer" class="d-none d-lg-flex text-white" />
-      <div
-        class="col d-none col d-sm-none col-6 d-lg-flex d-flex justify-content-between p-3"
-      >
-        <p class="text-white">Legal</p>
-        <p class="text-white">Privacy Center</p>
-        <p class="text-white">Pravicy Policy</p>
-        <p class="text-white">Cookie Settings</p>
-        <p class="text-white">About Ads</p>
-        <p class="text-white">Accessibility</p>
-      </div>
-      <div
-        class="col d-none col d-sm-none col-2 d-lg-flex d-flex justify-content-end align-items-center"
-      >
-        <p class="text-white">@2023 Spotify AB</p>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- FINE FOOTER -->
-
-
-
+          <!-- INIZIO FOOTER -->
+          <footer>
+            <div class="container-fluid">
+              <div class="row justify-content-between">
+                <div
+                  class="col d-none col d-sm-none col-2 d-lg-flex d-flex flex-column mb-3"
+                >
+                  <h3 class="h3-footer text-white">Company</h3>
+                  <p class="text-white mb-1">About</p>
+                  <p class="text-white mb-1">Jobs</p>
+                  <p class="text-white mb-1">For the Record</p>
+                </div>
+                <div
+                  class="col d-none col d-sm-none col-2 d-lg-flex d-flex flex-column mb-3"
+                >
+                  <h3 class="h3-footer text-white">Communities</h3>
+                  <p class="text-white mb-1">For Artists</p>
+                  <p class="text-white mb-1">Developers</p>
+                  <p class="text-white mb-1">Advertising</p>
+                  <p class="text-white mb-1">Investors</p>
+                  <p class="text-white mb-1">Vendors</p>
+                  <p class="text-white mb-1">Spotify for Work</p>
+                </div>
+                <div
+                  class="col d-none col d-sm-none col-2 d-lg-flex d-flex flex-column mb-3"
+                >
+                  <h3 class="h3-footer text-white mb-1">Useful links</h3>
+                  <p class="text-white mb-1">Support</p>
+                  <p class="text-white mb-1">Free Mobile App</p>
+                  <p class="text-white mb-1">Consumer rights</p>
+                </div>
+                <div
+                  class="col d-none col d-sm-none col-6 d-lg-flex d-flex justify-content-end mb-3 gap-3"
+                >
+                  <span class="fs-4 text-white"
+                    ><i class="fab fa-instagram"></i
+                  ></span>
+                  <span class="fs-4 text-white">
+                    <i class="fab fa-twitter"></i
+                  ></span>
+                  <span class="fs-4 text-white"
+                    ><i class="fab fa-facebook"></i
+                  ></span>
+                </div>
+                <hr id="hr-footer" class="d-none d-lg-flex text-white" />
+                <div
+                  class="col d-none col d-sm-none col-6 d-lg-flex d-flex justify-content-between p-3"
+                >
+                  <p class="text-white">Legal</p>
+                  <p class="text-white">Privacy Center</p>
+                  <p class="text-white">Pravicy Policy</p>
+                  <p class="text-white">Cookie Settings</p>
+                  <p class="text-white">About Ads</p>
+                  <p class="text-white">Accessibility</p>
+                </div>
+                <div
+                  class="col d-none col d-sm-none col-2 d-lg-flex d-flex justify-content-end align-items-center"
+                >
+                  <p class="text-white">@2023 Spotify AB</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- FINE FOOTER -->
         </div>
-
-
-        
       </div>
       <div class="row cols d-sm-block cols d-lg-none">
         <div
@@ -353,8 +336,7 @@
       </div>
     </div>
     <!-- FINE PLAY-BAR MOBILE -->
-    
-    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
